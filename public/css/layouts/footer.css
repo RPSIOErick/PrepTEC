@@ -1,0 +1,380 @@
+@import url("main.css");
+/*Container Principal*/
+    #d-footer-container
+    {
+        /*Size*/
+            height: max-content;
+        /*BG*/
+            background: rgb(27,57,96);
+            background: linear-gradient(0deg, rgba(27,57,96,1) 0%, rgba(50,108,180,1) 100%);
+        
+        /*Position*/
+            position: relative;
+    }
+/*Titulo do Footer*/
+    #txt-footer-title
+    {
+        /*Text*/
+            font-family: var(--font-roboto);
+            font-size: 2vw;
+            color: var(--color-white);
+            text-align: center;
+            font-weight: bold;
+        
+        /*Border / Margin / Drop-Shadow*/   
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+    }
+/*Desenvolvedores - Parte Esquerda*/
+
+    /*Coluna Desenvolvedores*/
+        #d-footer-devs-col
+        {
+            /*Position*/
+                position: relative;
+        }
+
+    /*Carrosel Imagem Dev*/
+        #d-footer-dev-carrousel-carrouselInner
+        {
+            /*Size*/
+                width: 20vw;
+                height: max-content;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+
+    /*Imagem Dev*/
+        .img-footer-dev-devPic
+        {
+            /*Size*/
+                width: 10vw;
+                height: auto;
+
+            /*Border / Margin / Drop-Shadow*/ 
+                border-width: 0.1vw;
+                border-style: solid;
+                border-color: var(--color-black-1);
+                margin-bottom: 1vw;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+
+    /*Coluna Icones*/
+        #d-footer-dev-carrosel-divIcon
+        {
+            /*Size*/
+                width: max-content;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%); 
+            
+            /*Border / Margin / Drop-Shadow*/
+                margin-bottom: 1vw;
+
+        }
+    
+    /*Icones*/
+        #d-footer-dev-carrosel-divIcon img
+        {
+            /*Size*/
+                width: 2.5vw;
+                height: auto;
+        }
+
+    /*Link*/
+        #d-footer-dev-carrosel-divIcon a
+        {
+            /*Text*/
+                text-decoration: none;
+        }
+
+    /*Nome do Dev*/
+        #txt-footer-dev-devName
+        {
+            /*Size*/
+                width: max-content;
+                
+            /*Text*/
+                font-family: var(--font-roboto);
+                font-size: 1.5vw;
+                color: var(--color-white);
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+
+            /*Border / Margin / Drop-Shadow*/
+                margin-bottom: 0.5vw;
+        }
+
+/*Fim dos Desenvolvedores*/
+
+/*PrepTec - Parte do Meio*/
+
+    /*Coluna do meio*/
+        #d-footer-preptec-col
+        {
+            /*Position*/
+                position: relative;
+
+            /*Border / Margin / Drop-Shadow*/
+                border-width: 0.1vw;
+                border-style: solid;
+                border-color: var(--color-black-1);
+                border-top: 0;
+                border-bottom: 0;
+        }
+    
+    /*Explicação texto preptec*/
+        #txt-footer-prepT-explanation
+        {
+            /*Size*/
+                width: 80%;
+
+            /*Text*/
+                font-size: 1.5vw;
+                font-family: var(--font-roboto);
+                color: var(--color-white);
+                text-align: justify;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+
+    /*Copyright*/
+        #txt-footer-prepT-copyright
+        {
+            /*Size*/
+                width: 80%;
+
+            /*Text*/
+                font-size: 1.5vw;
+                font-family: var(--font-roboto);
+                color: var(--color-white);
+                text-align: center;
+
+            /*Position*/
+                position: absolute;
+                left: 50%;
+                bottom: 2%;
+                transform: translateX(-50%);            
+        }
+
+/*Fim do PrepTEC*/
+
+/*Projeto - Parte Direita*/
+
+    /*Coluna Pojeto*/
+        #d-footer-projeto-col
+        {
+            /*Position*/
+                position: relative;
+        }
+
+    /*Logo PrepTEC Git*/
+        #img-footer-proj-preptecGit
+        {
+            /*Size*/
+                width: 55%;
+                height: auto;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            
+            /*Border / Margin / Drop-Shadow*/
+                margin-top: 1vw;
+                margin-bottom: 1vw;
+        }
+
+    /*Explicação Projeto*/
+        #txt-footer-proj-explanation        
+        {
+            /*Size*/
+                width: 60%;
+
+            /*Text*/
+                font-size: 1.5vw;
+                font-family: var(--font-roboto);
+                color: var(--color-white);
+                text-align: center;
+
+            /*Position*/
+                position: absolute;
+                left: 50%;
+                bottom: 2%;
+                transform: translateX(-50%);            
+        }
+
+/*Fim do Projeto*/
+
+@media screen and (orientation: portrait) 
+{
+/*Titulo do Footer*/
+    #txt-footer-title
+    {
+        /*Text*/
+            font-size: 2.5vh;
+            text-align: center;
+        
+        /*Border / Margin / Drop-Shadow*/   
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+    }
+/*Desenvolvedores - Parte Esquerda*/
+
+    /*Coluna Desenvolvedores*/
+        #d-footer-devs-col
+        {
+            /*Size*/
+                width: 100%;
+        }
+
+    /*Carrosel Imagem Dev*/
+        #d-footer-dev-carrousel-carrouselInner
+        {
+            /*Size*/
+                width: 23vh;
+        }
+
+    /*Imagem Dev*/
+        .img-footer-dev-devPic
+        {
+            /*Size*/
+                width: 13vh;
+                height: auto;
+
+            /*Border / Margin / Drop-Shadow*/ 
+                border-width: 0.1vh;
+                border-style: solid;
+                border-color: var(--color-black-1);
+                margin-bottom: 1vh;
+
+        }
+
+    /*Coluna Icones*/
+        #d-footer-dev-carrosel-divIcon
+        {    
+            /*Border / Margin / Drop-Shadow*/
+                margin-bottom: 2vh;
+
+        }
+    
+    /*Icones*/
+        #d-footer-dev-carrosel-divIcon img
+        {
+            /*Size*/
+                width: 2.5vh;
+                height: auto;
+        }
+
+    /*Nome do Dev*/
+        #txt-footer-dev-devName
+        {
+            /*Text*/
+                font-size: 1.5vh;
+
+            /*Border / Margin / Drop-Shadow*/
+                margin-bottom: 0.5vh;
+        }
+
+/*Fim dos Desenvolvedores*/
+
+/*PrepTec - Parte do Meio*/
+
+    /*Coluna do meio*/
+        #d-footer-preptec-col
+        {
+            /*Size*/
+                width: 100%;
+
+            /*Border / Margin / Drop-Shadow*/
+                border-top: 0.1vh solid var(--color-black-1);
+                border-bottom: 0.1vh solid var(--color-black-1);
+                border-left: 0;
+                border-right: 0;
+        }
+    
+    /*Explicação texto preptec*/
+        #txt-footer-prepT-explanation
+        {
+            /*Size*/
+                width: 60%;
+
+            /*Text*/
+                font-size: 1.5vh;
+
+            /*Border / Margin / Drop-Shadow*/
+                margin-top: 2vh;
+
+        }
+
+    /*Copyright*/
+        #txt-footer-prepT-copyright
+        {
+            /*Size*/
+                width: 60%;
+
+            /*Text*/
+                font-size: 1.5vh;
+
+            /*Border / Margin / Drop-Shadow*/
+                margin-top: 5vh;
+
+            /*Position*/
+                position: relative;
+                bottom: 5%;       
+        }
+
+/*Fim do PrepTEC*/
+
+/*Projeto - Parte Direita*/
+
+    /*Coluna Pojeto*/
+        #d-footer-projeto-col
+        {
+            /*Size*/
+                width: 100%;
+        }
+
+    /*Logo PrepTEC Git*/
+        #img-footer-proj-preptecGit
+        {
+            /*Size*/
+                width: 55%;
+                height: auto;
+            
+            /*Border / Margin / Drop-Shadow*/
+                margin-top: 2vh;
+                margin-bottom: 3vh;
+        }
+
+    /*Explicação Projeto*/
+        #txt-footer-proj-explanation        
+        {
+            /*Size*/
+                width: 60%;
+
+            /*Text*/
+                font-size: 1.5vh;
+
+            /*Position*/
+                position: relative;   
+               
+        }
+        
+/*Fim do Projeto*/
+}

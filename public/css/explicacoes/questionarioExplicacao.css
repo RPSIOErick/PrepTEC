@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&family=Salsa&display=swap');
+
+@import url("main.css");
+
+/* Parte: Banner no início da página */
+    #container-banner{
+        max-height: 91vh;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    /*fundo azul*/
+    #banner-fundo
+    {
+        padding: 10vh 15vh 0;
+        max-width: 100vw;
+        height: 55vh;
+        background-color: #132050;  
+        z-index: 2;
+        margin-bottom: -0.3vh
+    }
+
+    /* row */
+    #row-banner{
+        position: relative;
+        color: white;
+        font-family: var(--font-roboto);
+        height: 59.5vh;
+    }
+
+    #row-banner h1{
+        font-size: 2.7vw;
+        margin-top: 5vh;
+        font-family: var(--font-gabarito);
+    }
+
+    #row-banner p{
+        font-size: 1.6vw !important;
+        margin: 5vh 0;
+    }
+
+    #mobile-banner{
+        display: none;
+    }
+
+    /* colunas */
+    #col-one{
+        padding: 5vh;         
+        max-width: 66%;
+        height: 40vh;
+        display: block;
+    }
+
+    #col-one p{
+        font-size: 1.6vw;
+        margin-right: 3vw;
+    }
+
+    #col-two{      
+        max-width: 44%;
+        height: 40vh;
+        display: block;
+    }
+
+    #col-two img{
+        display: block;
+        width: 28vw;
+    }
+
+    /* Botão do banner */
+    #col-three-btn{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        margin-top: -10vh;
+        
+    }
+
+    #btn-tv {
+        /*letras*/
+        color: black;
+        font-size: 1.3vw;
+        /*tamanho*/
+        width: 17vw;
+        height: 4vw;
+        background: #EBEE49;
+        /*borda*/
+        box-sizing: border-box;
+        border-radius: 1.7vh;
+        box-shadow: 0px 1vh 0px rgb(212, 199, 4);       
+    }
+    
+    #btn-tv:hover {
+        background-color: #3b82f6;
+        box-shadow: 0 0 0 0.5vw #3b83f65f;
+        color: #fff;
+    }
+/* Fim Parte: Banner no início da página */
+
+/* parte: Inteligencias Muliplas */
+    #container-intelMult{
+        max-height: 100vh;
+        max-width: 100%;    
+        margin-bottom: 6vh;
+    }
+
+    #row-IM{
+        font-family: var(--font-roboto);
+    }
+
+    #col-one-IM{
+        max-width: 60%;   
+        margin: 6vh 0 5vh 0;
+        padding-left: 13vh;
+    }
+
+    #col-one-IM h1{
+        font-family: var(--font-gabarito);
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    #col-one-IM p{
+        padding: 0 3vw;
+        text-align: justify;
+        margin: 5vh 0;
+        font-size: 1.4vw;
+    }
+
+    #col-two-IM{
+        max-width: 40%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 6vh 0 5vh 0;
+    }
+
+    #col-two-IM img{
+        width: 84%; 
+    }
+
+
+/* accordion */
+
+    #row-accordion{
+        background-color: #b6cbe9;
+        padding-bottom: 10vh;
+        width: 100%; 
+        margin: 0;
+        padding: 0;
+    }
+
+    #row-accordion h5{
+        color: #122947;
+        font-size: 2.5vw;
+        text-align: center;
+        margin: 5vh 0 4vh 0;
+        font-family: var(--font-gabarito);
+    }
+
+    #texto-accordion{
+        padding: 5vh 23vw;
+    }
+
+    #row-accordion p{
+        font-size: 1.4vw;
+        text-align: justify;
+        font-family: var(--font-gabarito);
+    }
+
+    #accordion-header button{
+        height: 4vw;
+        font-size: 1vw;
+    }
+
+    #accordion-item{
+        box-shadow: 0px 0px 5.5px rgba(0, 0, 0, 0.5);
+        margin-bottom: 2vh;
+        background-color: rgba(114, 149, 239, 0.5);
+    }
+
+    #titulo_tipoIM{
+        font-size: 2.8vh !important;
+    }
+
+    #titulo-tipoIM{
+        font-size: 3vh 3vw !important;
+    }
+
+    #text-tipoInteli{
+        font-size: 1.25vw;
+        padding: 1.7vw;
+        text-align: justify;
+        font-family: var(--font-roboto);
+    }
+
+    #accordion{
+        width: 56%;
+        margin: 0 22vw;
+    }
+
+    #accordion button{
+        color: #1B3960;
+        font-weight: 600;
+        font-family: var(--font-roboto);
+        font-size: 3vh;
+    }
+
+    /* Estilizando o accordion fechado */
+    #accordion-item:not(.show) {
+        background-color: #f5e28d; 
+        color: #181818; 
+    }
+
+/* fim accordion */
+
+
+
+/*Dúvidas Frequentes*/
+    #container-duvidas{
+        min-height: 100vh;
+        max-width: 100%;    
+        background-color: whitesmoke;
+        padding: 6vh;
+        padding-bottom: 10vh;
+    }
+
+    #row-duvidas{
+        align-items: center;        
+        justify-content: center;
+    }
+
+    #row-duvidas h5{
+        color: #181818;
+        text-align: center;
+        font-size: 2.5vw;
+        font-family: var(--font-gabarito);
+        margin-bottom: 8vh;
+        margin-top: 5vh;
+    }
+
+    #row-duvidas h6{
+        color: #181818;
+        font-size: 1.5vw;
+        font-family: var(--font-gabarito);
+    }
+
+    #row-duvidas p{
+        font-size: 1.2vw;
+        padding: 0 1vw 0 1.2vw;
+    }
+        
+    #col-perguntas{
+        display: flex;
+                      
+        margin-bottom: 4vh;
+
+        padding: 2vw;
+        border-radius: 1vw 0 1vw 0;   
+
+        width: 66vw;
+        background-color: #FCFCFC;
+
+        box-shadow: 0px 0.7vh 0.7vh rgba(0, 0, 0, 0.2);
+
+        column-count: 1;
+
+        font-family: var(--font-roboto);
+
+        border-left: 1.5vw solid /* #f3dc76 */ #F1C247;
+        margin: 0 1vw 0 1vw;
+        
+    }
+
+    #col-perguntas img, #col-perguntas-azul img{
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+
+    #col-perguntas-azul{
+        display: flex;                      
+        margin-bottom: 3vh;
+
+        padding: 2vw;
+        border-radius: 1vw 0 1vw 0;   
+
+        width: 66vw;
+        background-color: #FCFCFC;
+
+        box-shadow: 0px 0.7vh 0.7vh rgba(0, 0, 0, 0.2);
+
+        column-count: 1;
+
+        font-family: var(--font-roboto);
+
+        border-left: 1.5vw solid /* #f3dc76 */ #326CB4;
+    }
+
+    #col-perguntas-azul-mobile, #col-perguntas-mobile{
+        display: none;
+    }
+
+/* (fim) Parte: Dúvidas Frequentes */
+
+
+
+    /* Título do banner teste vocacional */
+    #tv-title
+    {
+        font-size: 24px;
+        line-height: 20px;
+        color: #000000;
+        padding-top: 10px;
+    }
+        /* Card do teste vocacional */
+        #card-tv
+        {
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 10px;
+            position: relative;
+        }
+        /* Header do card */
+        #header-tv
+        {
+            background-color: #f4f767;
+            border-radius: 10px 10px 0 0px;
+            width: 100%;
+        }
+        #header-span-1, #header-span-2
+        {
+            font-size: 20px;
+            padding: 5px;
+        }
+        #header-span-2
+        {
+            position: relative;
+            float: left;
+        }
+        #header-span-2
+        {
+            position: relative;
+            float: right;
+        }
+        /* Fim do header do card */
+        /* Perguntas do teste */
+        #test-quest
+        {
+            font-size: 20px;
+        }
+        /* Botões do teste */
+        #btn-tv-manager
+        {
+            position: relative;
+            float: right;
+            /* background-color: red; */
+        }
+        #btn-tv-prev, #btn-tv-next
+        {
+            background-color: black;
+            border-radius: 50%;
+            height: 42px;
+            font-weight: bold;
+            width: fit-content;
+            color: yellow;
+            position: relative;
+        }
+
+        #col-img-mobile, #IM-mobile{
+            display: none;
+        }
+        
+
+/* Responsividade para mobile */
+
+    :root{
+        --font-roboto: 'Roboto', sans-serif;
+
+    }
+
+    @media screen and (orientation: portrait)
+    {
+
+        /* parte: banner inicial */
+            #banner-fundo
+            {
+                padding: 0vh 15vh 0;
+                height: 70vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;        
+            }
+
+            #row-banner{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #mobile-banner{
+                display: block;
+                min-height: auto;
+                padding-bottom: 10vh;
+
+            }
+
+            #mobile-banner h1{
+                font-size: 3.2vh; 
+                text-align: center;
+                margin: 0vh 3vw 3vh 3vw;
+            }
+
+            #mobile-banner p{
+                font-size: 4.7vw !important; 
+                text-align: center;
+                margin: 3vh 8vw 3vh 8vw;
+            }
+
+            #col-one, #col-two, #col-three-btn{
+                display: none;
+            }
+
+            #col-img-mobile{
+                display: block;
+                min-width: 100vw;
+                height: max-content;            
+                padding: 0 31vw 0 31vw;
+            }
+
+            #col-img-mobile img{
+                width: 36vw; 
+                min-width: 28vw;
+            }
+
+            #col-btn-mobile{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #col-btn-mobile button{
+               width: 34vw;
+               height: 13.5vw;
+               font-size: 3.5vw;
+            }
+    
+        /* Fim do banner inicial */
+
+        /* Parte: Explicação Inteligencia multipla */
+
+            #container-intelMult{
+                margin: 0;
+                columns: auto;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 40vh;
+                min-height: 130vh;
+            }    
+
+            #col-one-IM, #col-two-IM{
+                display: none;
+            }
+
+            #IM-mobile{
+                display: block;
+                max-width: 90vw;
+            }
+
+            #IM-mobile h1{
+                font-family: var(--font-gabarito);
+                text-align: center;
+                font-size: 3.7vh;
+                margin: 4vh 0 3vh;
+            }
+
+            #IM-mobile img{
+                margin-left: 14vw;
+                width: 60vw;
+                margin-bottom: 4vh;
+            }
+
+            #IM-mobile p{
+                text-align: justify;
+               position: relative;
+                font-size: 4.5vw;
+                font-family: var(--font-roboto);
+            }
+        /* Fim da Explicação da Inteligencia multipla */
+
+        /* Parte: Tipos das inteligências */
+           
+            #accordion{
+                width: 85vw;
+                margin: 0;
+                padding: 0;
+            }
+
+            #row-accordion{ 
+                min-width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-height: max-content;
+            }
+
+            #row-accordion h5{
+                font-size: 3.5vh;
+            }
+
+            #texto-accordion{
+                padding-top: 0vh;
+                padding-left: 5vh;
+                padding-right: 5vh;
+                padding-bottom: 5vh;
+            }        
+
+            #row-accordion p{
+                font-size: 4.5vw;
+                font-family: var(--font-roboto);
+            }
+
+            #accordion-header button{
+                min-height: 10vw;
+            }
+
+            #titulo_tipoIM{
+                font-size: 2.7vh !important;
+            }
+
+            #text-tipoInteli{
+                font-size: 3.9vw !important;
+                text-align: justify;
+                padding: 1.7vh;
+            }
+
+        /* Fim dos Tipos das inteligências */
+
+        /* Parte: Dúvidas Frequentes */
+            #container-duvidas{
+                height: min-content;
+                max-width: 100%;    
+                padding: 3vh;
+                padding-bottom: 10vh;
+            }
+
+            #row-duvidas h5{
+                margin: 2vh 0 5vh 0;
+                font-size: 3.5vh;
+                font-family: var(--font-gabarito);
+            }
+
+            #col-perguntas-azul, #col-perguntas{
+                display: none;
+            }
+
+            #col-perguntas-mobile, #col-perguntas-azul-mobile{
+
+                display: flex;
+                align-items: center;
+                      
+                margin-bottom: 4vh;
+                padding: 0;
+        
+                border-radius: 1vw 0 1vw 0;   
+        
+                background-color: #FCFCFC; 
+              
+        
+                box-shadow: 0px 0.7vh 0.7vh rgba(0, 0, 0, 0.2);
+        
+                font-family: var(--font-roboto);
+        
+                border-left: 1.5vw solid /* #f3dc76 */ #F1C247;
+
+                width: 71vh;
+                height: 60vw;
+               
+            }
+
+            #text-perguntas{
+                height: auto; 
+                padding: 2vw;
+            }
+
+            #col-perguntas-mobile p, #col-perguntas-azul-mobile p{
+                font-size: 4.5vw;
+                text-align: justify;
+                padding: 0 1vw 0 1vw;
+            }
+
+            #col-perguntas-mobile img, #col-perguntas-azul-mobile img{
+                width: 7vw;
+                height: 7vw;
+            }
+
+            #col-perguntas-mobile h6, #col-perguntas-azul-mobile h6{
+                font-size: 2.9vh;
+                margin-bottom: 2vh;
+            }
+        /* Fim da parte das Dúvidas Frequentes */
+
+    }
+
+/* Fim da Responsividade para mobile */

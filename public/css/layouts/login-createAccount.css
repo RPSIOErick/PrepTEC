@@ -1,0 +1,355 @@
+@import url("main.css");
+
+/*Popup Login*/
+    #popup-log-template-bg 
+    {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--color-black-1-7);
+        visibility: hidden;
+        opacity: 0;
+        z-index: 20;
+    }
+    #popup-log-template-bg:target 
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+/*Popup Criar Conta*/
+    #popup-CA-template-bg 
+    {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background: var(--color-black-1-7);
+        visibility: hidden;
+        opacity: 0;
+        z-index: 20;
+    }
+    #popup-CA-template-bg:target 
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+
+/*Container Popup*/
+    #popup-logCA-template 
+    {
+        border-color: var(--colo-black-1);
+        border-style: solid;
+        border-width: 0.15vh;
+
+        background: var(--color-white);
+        width:60%;
+        height: 48vw;
+        position: relative;
+    }
+
+/*Botão de Fechar */
+    #popup-logCA-template #btn-popup-logCA-template-close 
+    {
+        position: absolute;
+        z-index: 1;
+        top: -0.5vw;
+        right: 2%;
+        font-size: 2vw;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--color-blue-1);
+    }
+    #popup-logCA-template #btn-popup-logCA-template-close:hover {color: var(--color-blue-2);}
+
+
+/*Banner Popup*/
+    #d-popup-logCA-template-col-banner
+    {
+        position: relative;
+        height: 48vw;
+    }
+    #img-popup-logCA-template-banner
+    {
+        width: auto;
+        height: 48vw;
+    }
+
+/*Coluna Formulario*/
+    #d-popup-logCA-template-col
+    {
+        position: relative;
+        height: 48vw;
+    }
+
+    /*Cabeçalho*/
+        #d-popup-logCA-template-row-title
+        {
+            margin-top: 2vw;
+            margin-bottom: 1vw;
+            width: 100%;
+            height: 5vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 400;
+        }
+        #d-popup-logCA-template-col-icon
+        {
+            width: 5vh;
+            height: fit-content;
+            padding: 0;
+            left: 45%;
+        }
+        #d-popup-logCA-template-col-title
+        {
+            height: fit-content;
+            left: 0%;
+            margin-left: 1vh;
+        }
+        #icon-popup-logCA-template-personIcon
+        {
+            margin-left: 1.2vh;
+            border-radius: 50%;
+            font-size: 3vw;
+            color: var(--color-blue-12);
+        }
+        #txt-popup-logCA-template-title
+        {
+            color: #193457;
+            font-size: 1.6vw;
+            width: 25vh;
+            text-align: center;
+        }
+    /*Fim do Cabeçalho*/
+
+    /*Formulario textos*/
+        #d-popup-logCA-template-form
+        {
+            margin-top: 5%;
+            border-radius: 0;
+            font-family: var(--font-roboto);
+            font-size: 2vh;
+        }
+        #d-home-mb3Perfil
+        {
+            margin-top: 7vh !important;
+        }
+        #d-home-mb3Perfil img
+        {
+            width: 7vh;
+            height: auto;
+            margin-bottom: 1vw;
+        }
+        #d-popup-logCA-template-form .mb-3
+        {
+            margin: 2vw;
+        }
+
+        #d-popup-logCA-template-form input
+        {
+            border-radius: 1vh;
+            border-width: 0.2vh;
+            border-color: var(--color-blue-1);
+            box-shadow: 0 0.3vh 0.2vh var(--color-gray-1);
+            font-family: var(--font-roboto);
+            font-size: 2.5vh;
+        }
+        #d-popup-logCA-template-warning
+        {
+            /*BG*/
+                background-color: var(--color-white);   
+
+            /*Size*/
+                width: auto;
+                height: max-content;
+
+            /*Border / Margin / Drop-Shadow*/
+                border-radius: 0.5vw;
+                border-color: var(--color-blue-1);
+                border-width: 0.1vw;
+                border-style: solid;
+
+            /*Position*/
+                display: none;
+                position: absolute;
+                z-index: 10;
+
+            /*Padding*/
+                padding-top: 0.2vw;
+                padding-bottom: 0.2vw;
+                padding-left: 1.5vh;
+                padding-right: 1vh;
+        }
+        #d-popup-logCA-template-warning li, #d-popup-logCA-template-warning p
+        {
+            /*Text*/
+                font-family: var(--font-roboto);
+                font-size: 1.1vw;
+        }
+        #d-popup-logCA-template-form input:focus ~ #d-popup-logCA-template-warning
+        {
+            display: block;          
+        }
+
+        /*Botão Proximo / Logar / Cadastrar*/
+            #btn-popup-logCA-template
+            {
+                width: 27vh;
+                height: max-content;
+                position: absolute;
+                bottom: 2vw;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+                font-size: 1.3vw;
+            }
+
+            #btn-popup-logCA-template:hover{
+                background-color: #e9b42d;
+            }
+
+            #btn-popup-logCA-template p
+            {
+                color: var(--color-black-1);
+            }
+
+        
+    #txt-popup-logCA-template-text
+    {
+        width: max-content;
+        font-size: 1.15vw;
+        text-align: center;
+        position: absolute;
+        margin-top: 2vw;
+        left: 7%;
+        color: var(--color-black-1);
+    }
+    #txt-popup-logCA-template-text-2
+    {
+        width: max-content;
+        font-size: 1.15vw;
+        text-align: center;
+        position: absolute;
+        margin-top: 1vw;
+        left: 17%;
+        color: var(--color-black-1);
+    }
+
+    /*Ja tem Login?*/
+        #txt-popup-CA-login
+        {
+            text-decoration: underline;
+            color: var(--color-black-1);
+        }
+    /*Botão Voltar*/
+        #btn-popup-CA-backForm
+        {
+            width: max-content;
+            border: 0;
+            background-color: transparent;
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--color-blue-6);
+            text-decoration: underline;
+        }
+@media screen and (orientation: portrait)
+{
+    /*Banner Popup*/
+        #d-popup-logCA-template-col-banner
+        {
+            display: none;
+        }
+
+    
+    /*Botão de Fechar*/
+        #popup-logCA-template #btn-popup-logCA-template-close 
+        {
+            top: -1.5vh;
+            right: 3%;
+            font-size: 5vh;
+            color: var(--color-white);
+        }
+
+    /*Container Popup*/    
+        #popup-logCA-template 
+        {
+            width: 80%;
+            min-height: 70vh;
+            border-width: 0.2vh;
+            background: rgb(var(--color-blue-1));
+            background: linear-gradient(0deg, var(--color-blue-1) 0%, var( --color-blue-5) 100%);
+        }
+
+    /*Coluna Formulario*/   
+        #d-popup-logCA-template-col
+        {
+            width: 100%;
+            min-height: 70vh;
+        }
+
+        /*Cabeçalho*/
+            #d-popup-logCA-template-row-title
+            {
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                width: 100%;
+                height: 5vw;
+            }
+            #txt-popup-logCA-template-title
+            {
+                width: max-content;
+                font-size: 4vh;
+                color: var(--color-white);
+            }
+            
+            #icon-popup-logCA-template-personIcon
+            {
+                display: none;
+            }
+
+        /*Formulario textos*/
+ 
+        /*Botão Proximo / Logar / Cadastrar*/
+            #btn-popup-logCA-template
+            {
+                width: max-content;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                height: 7vh;
+                bottom: 2vh;
+                font-size: 2.5vh;
+            }
+
+        /*Textos*/
+            #txt-popup-logCA-template-text-2
+            {
+                font-size: 1.8vh;
+                position: relative;
+                margin-top: 1vh;
+                left: 0%;
+            }
+            #txt-popup-logCA-template-text
+            {
+                font-size: 1.8vh;
+                position: absolute;
+                margin-top: 2vh;
+                left: 13%;
+                color: var(--color-white);
+            }
+            #d-popup-logCA-template-warning li, #d-popup-logCA-template-warning p
+            {
+                /*Text*/
+                    font-family: var(--font-roboto);
+                    font-size: 4vw;
+                    color: var(--color-black-1);
+            }
+            #btn-popup-CA-backForm, #txt-popup-logCA-template-text-2, #txt-popup-CA-login, #d-popup-logCA-template-form .mb-3
+            {
+                color: white;
+            }
+
+}

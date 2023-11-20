@@ -1,0 +1,2080 @@
+ /*Titulo dos CRUD*/
+    /*Coluna Titulo dos CRUD*/
+        #d-CRUD-title-template
+        {
+            /*Size*/
+                width: 100%;
+                height: 5vw;
+            
+            /*Bg*/
+                background-color: var(--color-yellow-1);
+            
+            /*Position*/
+                position: relative;
+            
+            /*Padding*/
+                padding-top: 2vw;
+                padding-bottom: 2vw;
+        }
+
+    /*Texto Titulo do CRUD*/
+        #txt-CRUD-title-template
+        {
+            /*Text*/
+                font-family: var(--font-lexend-giga);
+                font-size: 2.5vw;
+            
+            /*Position*/
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+        }
+/*Fim do Titulo dos CRUD*/
+
+/*Formulario - CRIAR E EDITAR*/ 
+
+    /*Coluna Cinza*/
+        #d-CRUD-CU-col-template
+        {
+            /*Size*/
+                width: 95%;
+                height: max-content;
+
+            /*Bg*/
+                background-color: var(--color-gray-3);
+            
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            
+            /*Border / Margin / Drop-Shadow*/
+                border-radius: 1vh;
+                filter: drop-shadow(1.5vh 1.5vh 1.5vh var(--color-gray-1));
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+
+            /*Padding*/
+                padding: 0;
+                padding-bottom: 2vw;
+        }
+
+        /*Header*/
+
+            /*Cabeçario da Coluna Cinza*/
+                #d-CRUD-CU-col-header-template
+                {
+                    /*Size*/
+                        width: 100%;
+                        height: 4vw;
+
+                    /*Bg*/
+                        background-color: var(--color-gray-4);
+
+                    /*Border / Margin / Drop-Shadow*/
+                        border-top-left-radius: 1vh;
+                        border-top-right-radius: 1vh;
+                }
+
+            /*Coluna Cadastro de Questão*/
+                #d-CRUD-CU-col-header-title-template
+                {
+                    /*Size*/
+                        width: 49.5%;
+                        height: 4vw;
+                    
+                    /*Border / Margin / Drop-Shadow*/
+                        border-top-left-radius: 1vh;
+                        margin-left: 1vh;
+                    
+                    /*Position*/
+                        position: relative;
+                }
+
+            /*Titulo do Header*/
+                #txt-CRUD-CU-col-header-title-template
+                {
+                    /*Text*/
+                        font-family: var(--font-lexend-giga);
+                        font-size: 2vw;
+                    
+                    /*Position*/
+                        position: relative;
+                        left: 15%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                }
+
+            /*Coluna Botões do Formulario*/
+                #d-CRUD-CU-col-header-btn-template
+                {
+                    /*Size*/
+                        width: 49.2%;
+                        height: 4vw;
+                    
+                    /*Border / Margin / Drop-Shadow*/
+                        border-top-right-radius: 1vh;
+                    
+                    /*Position*/
+                        position: relative;
+                }
+
+            /*Botão Limpar*/
+                #btn-CRUD-CU-col-header-btnLimpar-template
+                {
+                    /*Size*/
+                        width: 20%;
+                        height: 90%;
+
+                    /*Text*/
+                        font-family: var(--font-roboto-flex);
+                        font-size: 1.5vw;
+
+                    /*Bg*/
+                        background-color: var(--color-blue-1-05);
+
+                    /*Border / Margin / Drop-Shadow*/
+                        border-radius: 2vh;
+                        border: 0;
+                    
+                    /*Position*/
+                        position: absolute;
+                        right: 23%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                }
+
+            /*Botão Salvar*/
+                #btn-CRUD-CU-col-header-btnSalvar-template
+                {
+                    /*Size*/
+                        width: 20%;
+                        height: 90%;
+                
+                    /*Text*/
+                        font-family: var(--font-roboto-flex);
+                        font-size: 1.5vw; 
+
+                    /*Bg*/
+                        background-color: var(--color-green-2-05);
+
+                    /*Border / Margin / Drop-Shadow*/
+                        border-radius: 2vh;
+                        border: 0;
+                    
+                    /*Position*/
+                        position: absolute;
+                        right: 2%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                }
+            
+        /*Fim do Header*/
+
+        /*Body*/
+
+            /*Coluna Principal Body*/
+                #d-CRUD-CU-col-body-template
+                {
+                    /*Size*/
+                        width: 90%;
+
+                    /*Border / Margin / Drop-Shadow*/
+                        margin-top: 5vw;
+                        margin-bottom: 2vw;
+
+                    /*Position*/
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                }
+
+                /*Label Input*/
+                    #txt-CRUD-CU-label-template
+                    {
+                        /*Text*/
+                            font-family: var(--font-saira);
+                            font-size: 1.5vw;
+
+                        /*Border / Margin / Drop-Shadow*/
+                            margin-left: 2vh;
+                            margin-top: 1vw;
+                            margin-bottom: 1vw;
+                    }
+                
+                /*Input Grande*/
+                    #input-CRUD-CU-bigInp-template
+                    {
+                        /*Size*/
+                            width: 100%;
+                            min-height: 10vw;
+
+                        /*Text*/
+                            font-family: var(--font-roboto);
+                            font-size: 1.2vw;
+                        
+                        /*Border / Margin / Drop-Shadow*/
+                            border: 0;
+                            border-left: 1vh solid var(--color-yellow-1);
+                            border-top-right-radius: 1vh;
+                            border-bottom-right-radius: 1vh;
+                            filter: drop-shadow(1.5vh 1.5vh 1.5vh var(--color-gray-1));
+
+                        /*Resize*/
+                            resize: none;
+
+                        /*Padding*/
+                            padding-left: 3vh;
+                            padding-top: 1vh;    
+                        
+                    }
+                    #input-CRUD-CU-bigInp-template::-webkit-scrollbar
+                    {
+                        /*BG*/
+                            background-color: var(--color-gray-2);
+                    }
+                    #input-CRUD-CU-bigInp-template::-webkit-scrollbar-thumb
+                    {
+                        /*BG*/
+                            background-color: var(--color-blue-1);
+
+                        /*Border / Margin / Drop-Shadow*/
+                            border-width: 0.18vh;
+                            border-style: solid;
+                            border-color: var(--color-blue-2);
+                            border-radius: 1vh;                        
+                    }
+                /*Fim do Input Grande*/
+
+                /*Input Pequeno*/
+                    #input-CRUD-CU-shortInp-template
+                    {
+                        /*Size*/
+                            width: 80%;
+                            min-height: 3vw;
+
+                        /*Text*/
+                            font-family: var(--font-roboto);
+                            font-size: 1.2vw;
+                        
+                        /*Border / Margin / Drop-Shadow*/
+                            border: 0;
+                            border-left: 1vh solid var(--color-yellow-1);
+                            border-radius: 0.8vh;
+                            filter: drop-shadow(1.5vh 1.5vh 1.5vh var(--color-gray-1));
+                            margin-right: 3vh;
+                        
+                        /*Padding*/
+                            padding-left: 3vh;
+                        
+                        /*Display*/
+                            display: inline-block;
+                        
+                    }
+                /*Coluna Titulo Alternativa*/
+                    #d-CRUD-CU-alt-title
+                    {
+                        /*Size*/
+                            width: 98.5%;
+                            height: 4vw;
+
+                        /*BG*/
+                            background-color: var(--color-yellow-1);
+    
+                        /*Border / Margin / Drop-Shadow*/
+                            border-width: 0.1vh;
+                            border-style: solid;
+                            border-color: var(--color-blue-1);
+                            border-top-left-radius: 1vh;
+                            border-top-right-radius: 1vh;
+                            margin-top: 3vw;
+                        
+                        /*Position*/
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                    }
+
+                /*Titulo Titulo Alternativa*/
+                    #txt-CRUD-CU-alt-title
+                    {
+                        /*Text*/
+                            font-family: var(--font-roboto);
+                            font-size: 2vw;
+
+                        /*Position*/
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                    }
+
+                /*Row Colunas Label*/
+                    #d-CRUD-CU-alt-labelRow
+                    {
+                        width: 98.5%;
+                        margin-left: 1vh;
+                        padding: 0;
+                        margin-top: 3vw;
+                    }
+
+                /*Row Coluna Principal Alternativas*/
+                    #d-CRUD-CU-altRow
+                    {
+                        position: relative;
+                    }
+                
+                /*Coluna da Label ID*/
+                    #d-CRUD-CU-alt-labelCol1
+                    {
+                        /*Size*/
+                            width: 8.6%;
+
+                        /*Text*/
+                            text-align: center;
+                    }
+
+                /*Coluna da Label Texto da Alternativa*/
+                    #d-CRUD-CU-alt-labelCol2
+                    {    
+                        /*Size*/
+                            width: 78.2%;
+
+                        /*Text*/
+                            text-align: left;
+                        
+                        /*Padding*/
+                            padding-left: 2vw;
+                    }
+
+                /*Coluna da Label Alternativa Correta*/
+                    #d-CRUD-CU-alt-labelCol3
+                    {
+                        /*Size*/
+                            width: fit-content;
+                        /*Text*/
+                            text-align: center;
+                    }
+                
+                /*Texto dos Campos Alternativa*/
+                    #txt-CRUD-CU-alt-labelCamp
+                    {
+                        /*Text*/
+                            font-family: var(--font-roboto);
+                            font-size: 1.5vw;
+                    }
+                /*Coluna do CAMPO alternativa*/
+                    #d-CRUD-CU-alt-col
+                    {
+                        margin-bottom: 1vw;
+                    }        
+                /*Coluna Principal Input*/
+                    #d-CRUD-CU-alt-colInput
+                    {
+                        /*Size*/
+                            width: 82.5%;
+                            height: 6vw;
+
+                        /*Border / Margin / Drop-Shadow*/
+                            border-width: 0.1vh;
+                            border-style: solid;
+                            border-color: var(--color-blue-1);
+                            border-radius: 1vh;
+                            margin-left: 1vh;
+                        
+                    }
+                /*Coluna Letra Alternativa*/
+                    #d-CRUD-CU-alt-labelLetter
+                    {
+                         /*Size*/
+                            width: 10%;
+                            height: 5.9vw;
+
+                        /*Bg*/
+                            background-color: var(--color-yellow-1);
+
+                        /*Border / Margin / Drop-Shadow*/
+                            border-top-left-radius: 1vh;
+                            border-bottom-left-radius: 1vh;
+                            border-right: 0.1vh solid var(--color-blue-1);
+
+                        /*Position*/
+                            position: relative;
+                    }
+
+                /*Texto Coluna Alternativa*/
+                    #txt-CRUD-CU-alt-labelLetter
+                    {
+                        /*Text*/
+                            font-family: var(--font-roboto);
+                            font-size: 1.5vw;
+                        
+                        /*Position*/
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                    }
+
+                /*Coluna Input Alternativa*/
+                    #d-CRUD-CU-altInput
+                    {
+                        /*Size*/
+                            width: 90%;
+
+                        /*Padding*/
+                            padding: 0;
+                    }
+                
+                /*Input Alternativa*/
+                    
+                    /*Input*/
+                        #input-CRUD-CU-alt
+                        {
+                            /*Size*/
+                                width: 100%;
+                                min-height: 5.8vw;
+
+                            /*Text*/
+                                font-family: var(--font-roboto);
+                                font-size: 1.2vw;
+                            
+                            /*Border / Margin / Drop-Shadow*/
+                                border: 0;
+                                border-top-right-radius: 1vh;
+                                border-bottom-right-radius: 1vh;
+                            
+                            /*Resize*/
+                                resize: none;  
+                        }
+
+                    /*Scroll (Background)*/
+                        #input-CRUD-CU-alt::-webkit-scrollbar
+                        {
+                            /*BG*/
+                                background-color: var(--color-gray-2);
+                        }
+
+                    /*Scroll ("Tracinho")*/
+                        #input-CRUD-CU-alt::-webkit-scrollbar-thumb
+                        {
+                            /*BG*/
+                                background-color: var(--color-blue-1);
+
+                            /*Border / Margin / Drop-Shadow*/
+                                border-width: 0.18vh;
+                                border-style: solid;
+                                border-color: var(--color-blue-2);
+                                border-radius: 1vh;                        
+                        }
+                /*Fim do Input Alternariva*/
+
+                /*Checkbox Alternativa*/
+
+                    /*Coluna*/
+                        #d-CRUD-CU-alt-checkbox
+                        {                      
+                            /*Size*/   
+                                width: 16%;
+
+                            /*Position*/
+                                position: relative;
+                        }
+
+                    /*Checkbox (Estado Normal)*/
+                        #checkbox-CRUD-CU-alt, [id^="d-simu-create-alternativa1-radio-"]
+                        {
+                            /*Size*/
+                                width: 50%;
+                                height: 50%;
+                            
+                            /*Bg*/
+                                background-color: var(--color-white);
+                                
+                            /*Border / Margin / Drop-Shadow*/
+                                border-width: 0.1vh;
+                                border-style: solid;
+                                border-color: var(--color-blue-1);
+                                border-radius: 1vh;
+                            /*Position*/
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            
+                            /*Appearance*/
+                                appearance: none;
+                        }
+                    
+                    /*Checkbox (Depois de Clicar)*/
+                        #checkbox-CRUD-CU-alt:checked, [id^="d-simu-create-alternativa1-radio-"]:checked
+                        {
+                            /*Bg*/
+                                background-color: var(--color-blue-1);
+                        }
+                /*Fim do Checkbox Alternativa*/
+
+                /*Dropdown Inteligencias*/
+
+                    /*Dropdown*/
+                        #input-CRUD-CU-qv-dropdown
+                        {
+                            /*Size*/
+                                width: 40%;
+                                height: 7vw;
+
+                            /*Text*/
+                                font-size: 1.5vw;
+                                font-family: var(--font-roboto);
+
+                            /*Border / Margin / Drop-Shadow*/
+                                border-width: 0.2vw;
+                                border-style: solid;
+                                border-color: var(--color-yellow-1);
+
+                            /*Padding*/
+                                padding-left: 5vh;
+
+                            /*Webkit*/    
+                                -webkit-box-sizing: border-box;
+                                -moz-box-sizing: border-box;
+                                box-sizing: border-box;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                        }
+
+                    /*Seta do Dropdown*/
+                        .input-CRUD-CU-qv-dropdown-arrow 
+                        {
+                            background-image:
+                                linear-gradient(45deg, transparent 50%, var(--color-yellow-1) 50%),
+                                linear-gradient(135deg, var(--color-yellow-1) 50%, transparent 50%);
+                            background-position:
+                                calc(80.5%) calc(50%),
+                                calc(85%) calc(50%);
+                            background-size:
+                                1.5vw 1.5vw,
+                                1.5vw 1.5vw;
+                            background-repeat: no-repeat;
+                        }
+
+                /*Fim do Dropdown Inteligencias*/
+
+                /*Botões Usuario*/
+                        
+                        /*Botão Limpar*/
+                            #btn-CRUD-CU-usu-Voltar
+                            {
+                                /*Size*/
+                                    width: 48%;
+                                    height: 2.5vw;
+                                
+                                /*Bg*/
+                                    background-color: var(--color-blue-10);
+
+                                /*Text*/
+                                    font-size: 1.3vw;
+                                    font-family: var(--font-roboto);
+                                
+                                /*Border / Margin / Drop-Shadow*/
+                                    border: 0;
+                                    border-radius: 1.5vh;
+                                    margin-right: 2vh;
+                                    margin-top: 3vw;
+                            }
+                        /*Botão Salvar*/
+                            #btn-CRUD-CU-usu-Salvar
+                            {
+                                /*Size*/
+                                    width: 48%;
+                                    height: 2.5vw;
+                            
+                                /*Bg*/
+                                    background-color: var(--color-yellow-6);
+
+                                /*Text*/
+                                    font-size: 1.3vw;
+                                    font-family: var(--font-roboto);
+                                
+                                /*Border / Margin / Drop-Shadow*/
+                                    border: 0;
+                                    border-radius: 1.5vh;
+                            }
+
+                /*Fim dos Botões Usuario*/
+
+                /*Icones Usuario*/
+                    
+                    /*Coluna Icone*/
+                        #d-CRUD-CU-usu-iconCol
+                        {
+                            /*Size*/
+                                width: 8vh;
+                                height: 3vw;
+                            
+                            /*BG*/
+                                background-color: var(--color-blue-1);
+                            
+                            /*Text*/
+                                font-size: 1.8vw;
+                                color: var(--color-white);
+                            
+                            /*Border / Margin / Drop-Shadow*/
+                                border-radius: 1.5vh;
+                            
+                            /*Display*/
+                                display: inline-block;
+                        }
+                /*Fim dos Icones Usuario*/
+
+                 /*Foto de Perfil*/
+
+                    /*Coluna*/
+                    #d-CRUD-U-usu-colProfilePicture
+                    {
+                        /*Size*/
+                            width: max-content;
+                    }   
+                    
+                    /*Imagem*/
+                    #img-CRUD-U-usu-profilePicture
+                    {
+                        /*Size*/
+                            width: auto;
+                            height: 15vw;
+
+                        /*Border / Margin / Drop-Shadow*/
+                            border-radius: 1.5vh;
+                            margin-bottom: 2vw;
+                    }
+                
+                    #input-imagem-user
+                    {
+                        margin-top: 1vw;
+                        width: 70%;
+                        margin-left: 2vh;
+                        border-width: 0.2vw;
+                        border-style: solid;
+                        border-radius: 0;
+                        border-color: var(--color-yellow-1);
+                    }
+                    input[type=file]::file-selector-button
+                    {
+                        font-family: var(--font-roboto);
+                        font-size: 1.3vw;
+                        background-color: var(--color-yellow-5);
+                        color: var(--color-black-1);
+                    }
+                /*Dropdown Tipo Usuario*/
+
+                    /*Coluna*/
+                        #d-CRUD-U-usu-colIdAndTipoUsu
+                        {
+                            /*Size*/
+                                width: 65%;
+                        }
+                    /*Dropdown*/
+                        #input-CRUD-CU-usu-dropdown
+                        {
+                            /*Size*/
+                                width: 70%;
+                                height: 3vw;
+
+                            /*Text*/
+                                font-size: 1.5vw;
+                                font-family: var(--font-roboto);
+
+                            /*Border / Margin / Drop-Shadow*/
+                                border-width: 0.2vw;
+                                border-style: solid;
+                                border-color: var(--color-yellow-1);
+                                margin-right: 3vh;
+                                margin-left: 2vh;
+
+                            /*Padding*/
+                                padding-left: 5vh;
+
+                            /*Webkit*/    
+                                -webkit-box-sizing: border-box;
+                                -moz-box-sizing: border-box;
+                                box-sizing: border-box;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                            
+                            /*Display*/
+                                display: inline-block;
+                        }
+
+                    /*Seta do Dropdown*/
+                        .input-CRUD-CU-usu-dropdown-arrow 
+                        {
+                            background-image:
+                                linear-gradient(45deg, transparent 50%, var(--color-yellow-1) 50%),
+                                linear-gradient(135deg, var(--color-yellow-1) 50%, transparent 50%);
+                            background-position:
+                                calc(78%) calc(50%),
+                                calc(78% + 1.1vw) calc(50%);
+                            background-size:
+                                1.2vw 1.2vw,
+                                1.2vw 1.2vw;
+                            background-repeat: no-repeat;
+                        }
+                /*Fim do Dropdown Tipo Usuario*/
+
+                /*Coluna Body Usuario*/
+                    #d-CRUD-CU-usu-col-body
+                    {
+                        /*Size*/
+                            width: 60%;
+                        
+                        /*Position*/
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        
+                        /*Border / Margin / Drop-Shadow*/
+                            margin-top: 2vw;
+                            margin-bottom: 2vw;
+                    }
+        /*Fim do Body*/
+            
+/*Fim do Formulario*/
+
+/*LISTAR*/
+
+    /*Coluna Botões e Barra*/
+        #d-CRUD-R-colSearchBar-BTNread
+        { 
+            /*Size*/
+                width: 90%;
+                height: 15vw;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+        }             
+    /*Barra de Pesquisa*/ 
+
+        /*Coluna Barra de Pesquisa*/
+            #d-CRUD-R-colSearchBar
+            {
+                /*Size*/
+                    width: 70%;
+                    height: 5vw;
+
+                /*Position*/
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+            }
+            
+            /*Barra de Pesquisa*/
+                #d-CRUD-R-seachBar
+                {
+                    /*Size*/
+                        width: 100%;
+                        height: 100%;
+                }
+
+        /*Coluna Icone*/
+            #d-CRUD-R-colSeachIco
+            {
+                /*Size*/
+                    width: 15%;
+                    height: 4.9vw;
+                /*BG*/
+                    background-color: var(--color-yellow-1);
+
+                /*Border / Margin / Drop-Shadow*/
+                    border-top-left-radius: 1.5vw;
+                    border-bottom-left-radius: 1.5vw;
+                    border-color: var(--color-blue-1);
+                    border-width: 0.1vw;
+                    border-style: solid;
+                
+                /*Position*/
+                    position: relative;
+            }
+
+            /*Icone*/
+                #icon-CRUD-R-seachIco
+                {
+                    /*Text - (O icon é tratado como Text)*/
+                        font-size: 3.5vw;
+
+                    /*Position*/
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                }
+
+        /*Coluna Input*/
+            #d-CRUD-R-colSeachInput
+            {
+                /*Size*/
+                    width: 83.2%;
+                    height: 4.9vw;
+                
+                /*Padding*/
+                    padding: 0;
+            }
+
+            /*Input*/
+                #input-CRUD-R-seachInput
+                {
+                    /*Size*/
+                        width: 100%;
+                        height: 100%;
+
+                    /*Text*/
+                        font-size: 1.5vw;
+                        font-family: var(--font-roboto);
+
+                    /*Border / Margin / Drop-Shadow*/ 
+                        border-top-right-radius: 1.5vw;
+                        border-bottom-right-radius: 1.5vw;
+                        border-left: 0;
+                        border-width: 0.1vw;
+                        border-style: solid;
+                        border-color: var(--color-blue-1);
+                    
+                    /*Padding*/
+                        padding-left: 2vh;
+                }
+    /*Fim da Barra de Pesquisa*/     
+
+    /*Coluna Botões*/
+        #d-CRUD-R-colBTNread
+        {
+            /*Size*/
+                width: 25%;
+                height: 5vw;
+            
+            /*Position*/
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            
+            /*Padding*/
+                padding: 0;
+        }
+
+        /*Botão Buscar*/
+            #btn-CRUD-R-btnBuscar
+            {
+                /*Size*/
+                    width: 49.25%;
+                    height: 80%;
+                
+                /*BG*/
+                    background-color: var(--color-yellow-1);
+                
+                /*Text*/
+                    font-size: 1.5vw;
+                    font-family: var(--font-roboto);
+
+                /*Border / Margin / Drop-Shadow*/ 
+                    border-radius: 1.5vw;
+                    border: 0;
+
+                /*Position*/
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);    
+            }
+
+        /*Botão Novo*/
+            #btn-CRUD-R-btnNovo
+            {
+                /*Size*/
+                    width: 49.25%;
+                    height: 80%;
+            
+                /*BG*/
+                    background-color: var(--color-green-2);
+                
+                /*Border / Margin / Drop-Shadow*/ 
+                    border-radius: 1.5vw;
+                    border: 0;
+
+                /*Position*/
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);    
+            }
+        
+        /*Texto do Botão Novo*/
+            #txt-CRUD-R-btnNovo
+            {
+                /*Text*/
+                    font-size: 1.5vw;
+                    font-family: var(--font-roboto);
+                    text-decoration: none;
+                    color: var(--color-black-1);
+            }
+        
+        /*Paginação*/
+
+            /*Coluna Botões de Paginação*/
+                #d-paginate-previous
+                {
+                    /*Size*/
+                        width: max-content;
+                    
+                    /*Position*/
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                }
+            /*Botões Paginaçao (Anterior e Proximo)*/      
+                #d-paginate-previous-btn, 
+                #d-paginate-next-btn
+                {
+                    /*BG*/
+                        background-color: var(--color-blue-9);
+
+                    /*Text*/
+                        font-size: 1.5vw;
+                        font-family: var(--font-roboto);
+                        color: var(--color-black-1);
+                    
+                    /*Border / Margin / Drop-Shadow*/ 
+                        border-radius: 1.5vw;
+
+                    /*Padding*/
+                        padding-top: 1vw;
+                        padding-bottom: 1vw;
+                        padding-left: 3vh;
+                        padding-right: 3vh;
+                }
+
+            /*Botão Anterior*/
+                #d-paginate-next-btn
+                {
+                    position: relative;
+                    float: right;
+                    margin-left: 3vh;
+                }
+        /*Fim da Paginação*/
+
+        /*Tabela*/
+            #d-quest-voc-table, #d-estudantes-table
+            {
+                position: relative;
+                top: 3.5vw;
+                width: 90%;
+            }
+            
+            #table-quest-voc, #table-estudantes-voc
+            {
+                width: 100%;
+                border: 0.1vw solid;
+                border-color: #C7C2C2;
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                
+            }
+            
+            #table-quest-voc-title, #table-estudantes-title
+            {
+                background-color: #326CB4;
+                color: white;
+                text-align: center;
+                height: 4vw;
+                text-transform: uppercase;
+                font-size: 1.4vw;
+            }
+            
+            #table-quest-voc-id
+            {
+                width: 7vw;
+            }
+            
+            [id*="table-quest-voc-data-"], #table-estudante-data
+            {
+                text-align: center;
+                height: 4vw;
+                font-size: 1.3vw;
+            }
+            
+            #table-quest-voc-linha, 
+            #table-quest-voc-linha-intMult, 
+            #table-quest-voc-linha-func, 
+            #table-estudante-linha
+            {
+                border: 0.1vw solid;
+                border-color: #C7C2C2;
+                border-top: 0;
+                color: black;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+                padding-left: 1vh;
+                padding-right: 1vh;
+            }
+            
+            #table-quest-voc-form-excl
+            {
+                width: fit-content;
+                display: inline-block;    
+            }
+            
+            #img-template-icons
+            {
+                color: #326CB4;
+                width: 2vw;
+                height: 2vw;
+            }
+            
+            #table-quest-voc-linha-intMult
+            {
+                width: 20vw;
+            }
+            
+            #table-quest-voc-linha-func
+            {
+                width: 10vw;
+                position: relative;
+            }
+            
+            /* Está usando seletor pois não está funcionando */
+            tr:nth-child(odd)
+            {
+                background-color: #f2f2f2;
+            }
+            
+            /* Fim do Questionário Vocacional */
+            
+            
+            /* Páginas de Consulta de Estudantes */
+            
+            #table-estudantes-func-icon, #table-estudante-linha-func
+            {
+                color: #326CB4;
+                font-size: 2vw;
+                position: relative;
+                top: 0.40vw;
+            }
+            
+            #table-estudante-linha-func
+            {
+                top: 0;
+            }
+            
+            #table-estudantes-func
+            {
+                font-size: 1.3vw;
+                color: #326CB4;
+            }
+            
+            #table-estudante-linha-nome
+            {
+                width: 35vw;
+            }
+            
+            #d-paginate-estudante
+            {
+                width: fit-content;
+                margin: 0 auto;
+                margin-top: 4vw;
+                transform: scale(1.5vw);
+            }
+        
+        /*Fim da Tabela*/
+
+        /*Popup Excluir*/
+            /* Pop-up de Exclusão */
+                [id^="Popup-Excl-"] {
+
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.7);
+                    transition: opacity 500ms;
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                [id^="Popup-Excl-"]:target 
+                {
+                    visibility: visible;
+                    opacity: 1;
+                    z-index: 20;
+                }
+                .popup 
+                {
+                    margin: 70px auto;
+                    padding: 20px;
+                    background: #ebe9e9;
+                    border-radius: 5px;
+                    width: 60%;
+                    position: relative;
+                    transition: all 5s ease-in-out;
+                }
+                .popup .close 
+                {
+                    position: absolute;
+                    top: 1vw;
+                    right: 2.5vh;
+                    transition: all 200ms;
+                    font-size: 2vw;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #333;
+                }
+                .popup .close:hover 
+                {
+                    color: #326cb4;
+                }
+                .popup .content 
+                {
+                    max-height: 30%;
+                    overflow: auto;
+                }
+                #Excl-form-btn
+                {
+                    background-color: #F1C247;
+                    width: 10vw;
+                    font-weight: bold;
+                    font-size: 1vw;
+                }
+                #Trash-Icon
+                {
+                    font-size: 2vw;
+                    margin-bottom: 1vw;
+                    color: var(--color-blue-1);
+                }
+                #Excl-form-btn:hover
+                {
+                    border: 0.2vw solid;
+                    border-color: #ac8525;
+                }
+
+        /*Fim do Popup Excluir*/
+            #txt-CRUD-R-mobileWarning
+            {
+                display: none;
+            }
+
+        /*Botão Resultado*/
+            #btn-CRUD-R-btnVoltarListagemGeral
+            {
+                /*Size*/
+                    width: 75%;
+                    height: 100%;
+                
+                /*BG*/
+                    background-color: var(--color-yellow-1);
+                
+                /*Text*/
+                    font-size: 1.4vw;
+                    font-family: var(--font-roboto);
+
+                /*Border / Margin / Drop-Shadow*/ 
+                    border-radius: 1.5vw;
+                    border: 0;
+
+                /*Position*/
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);    
+            }
+            #btn-CRUD-R-btnVoltarListagemGeral a
+            {
+                /*Text*/
+                    color: var(--color-black-1);
+                    text-decoration: none;
+            }
+            #btn-CRUD-R-btnVoltarListagemGeral-mobile
+            {
+                display: none;
+            }
+
+        /*Tabela Resultados*/
+            #table-result-data
+            {
+                font-family: var(--font-roboto);
+                font-size: 1.3vw;
+                text-align: center;
+            }
+/*Fim do LISTAR*/
+
+@media screen and (orientation: portrait)
+{
+    /*Titulo dos CRUD*/
+        /*Coluna Titulo dos CRUD*/
+        #d-CRUD-title-template
+        {
+            /*Size*/
+                height: 5vh;
+            
+            /*Padding*/
+                padding-top: 2vh;
+                padding-bottom: 2vh;
+        }
+
+    /*Texto Titulo do CRUD*/
+        #txt-CRUD-title-template
+        {
+            /*Size*/
+                width: max-content;
+            /*Text*/
+                font-size: 2vh;
+        }
+    /*Fim do Titulo dos CRUD*/
+
+    /*Formulario*/
+
+    /*Coluna Cinza*/
+        #d-CRUD-CU-col-template
+        {
+            
+            /*Border / Margin / Drop-Shadow*/
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+
+            /*Padding*/
+                padding: 0;
+                padding-bottom: 2vh;
+        }
+
+        /*Header*/
+
+            /*Cabeçario da Coluna Cinza*/
+                #d-CRUD-CU-col-header-template
+                {
+                    /*Size*/
+                        height: 4vh;
+                }
+
+            /*Coluna Cadastro de Questão*/
+                #d-CRUD-CU-col-header-title-template
+                {
+                    /*Size*/
+                        width: 55.8%;
+                        height: 4vh;
+                    
+                    /*Border / Margin / Drop-Shadow*/
+                        margin-left: 1vw;
+                }
+
+            /*Titulo do Header*/
+                #txt-CRUD-CU-col-header-title-template
+                {
+                    /*Size*/
+                        width: max-content;
+                    /*Text*/
+                        font-size: 1.8vh;
+                    
+                    /*Position*/
+                        position: relative;
+                        left: 15%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                }
+
+            /*Coluna Botões do Formulario*/
+                #d-CRUD-CU-col-header-btn-template
+                {
+                    /*Size*/
+                        width: 40.2%;
+                        height: 4vh;
+                }
+
+            /*Botão Limpar*/
+                #btn-CRUD-CU-col-header-btnLimpar-template
+                {
+                    /*Size*/
+                        width: 35%;
+                        height: 90%;
+
+                    /*Text*/
+                        font-size: 1.5vh;
+
+                    /*Border / Margin / Drop-Shadow*/
+                        border-radius: 2vw;
+                    
+                    /*Position*/
+                        right: 38%;
+                }
+
+            /*Botão Salvar*/
+                #btn-CRUD-CU-col-header-btnSalvar-template
+                {
+                    /*Size*/
+                        width: 35%;
+                        height: 90%;
+                
+                    /*Text*/
+                        font-size: 1.5vh; 
+
+                    /*Border / Margin / Drop-Shadow*/
+                        border-radius: 2vw;
+                    
+                    /*Position*/
+                        right: 2%;
+                }
+            
+        /*Fim do Header*/
+
+        /*Body*/
+
+            /*Coluna Principal Body*/
+                #d-CRUD-CU-col-body-template
+                {
+                    /*Border / Margin / Drop-Shadow*/
+                        margin-top: 2vh;
+                        margin-bottom: 2vh;
+                }
+
+                /*Label Input*/
+                    #txt-CRUD-CU-label-template
+                    {
+                        /*Text*/
+                            font-size: 1.5vh;
+
+                        /*Border / Margin / Drop-Shadow*/
+                            margin-left: 2vw;
+                            margin-top: 1vh;
+                            margin-bottom: 1vh;
+                    }
+                
+                /*Input Grande*/
+                    #input-CRUD-CU-bigInp-template
+                    {
+                        /*Size*/
+                            min-height: 7vh;
+
+                        /*Text*/
+                            font-size: 1.5vh;
+                        
+                        /*Border / Margin / Drop-Shadow*/
+                            border-left: 1vw solid var(--color-yellow-1);;            
+                    }
+                /*Fim do Input Grande*/
+
+                /*Input Pequeno*/
+                    #input-CRUD-CU-shortInp-template
+                    {
+                        /*Size*/
+                            width: 95%;
+                            min-height: 4vh;
+
+                        /*Text*/
+                            font-size: 1.5vh;
+                        
+                        /*Border / Margin / Drop-Shadow*/
+                            margin-right: 3vw;
+                        
+                        /*Padding*/
+                            padding-left: 3vw;
+                        
+                    }
+                /*Coluna Titulo Alternativa*/
+                    #d-CRUD-CU-alt-title
+                    {
+                        /*Size*/
+                            height: 4vh;
+
+                        /*Border / Margin / Drop-Shadow*/
+                            margin-top: 3vh;
+                    }
+
+                /*Titulo Titulo Alternativa*/
+                    #txt-CRUD-CU-alt-title
+                    {
+                        /*Text*/
+                            font-size: 2vh;
+                    }
+
+                /*Row Colunas Label*/
+                    #d-CRUD-CU-alt-labelRow
+                    {
+                        margin-left: 1vw;
+                        margin-top: 3vh;
+                    }
+
+                /*Coluna da Label Texto da Alternativa*/
+                    #d-CRUD-CU-alt-labelCol2
+                    {    
+                        /*Size*/
+                            width: 73.4%;
+
+                        /*Text*/
+                            text-align: left;
+                        
+                        /*Padding*/
+                            padding-left: 4vw;
+                    }
+
+                /*Coluna da Label Alternativa Correta*/
+                    #d-CRUD-CU-alt-labelCol3
+                    {
+                        /*Size*/
+                            width: 18%;
+                        /*Padding*/
+                    }
+                
+                /*Texto dos Campos Alternativa*/
+                    #txt-CRUD-CU-alt-labelCamp
+                    {
+                        /*Text*/
+                            font-size: 1.5vh;
+                    }
+                /*Coluna do CAMPO alternativa*/
+                    #d-CRUD-CU-alt-col
+                    {
+                        margin-bottom: 1vh;
+                    }        
+                /*Coluna Principal Input*/
+                    #d-CRUD-CU-alt-colInput
+                    {
+                        /*Size*/
+                            height: 6vh;
+
+                        /*Border / Margin / Drop-Shadow*/
+                            margin-left: 1vw; 
+                    }
+                /*Coluna Letra Alternativa*/
+                    #d-CRUD-CU-alt-labelLetter
+                    {
+                        /*Size*/
+                            height: 5.9vh;
+
+                        /*Bg*/
+                            background-color: var(--color-yellow-1);
+
+                        /*Border / Margin / Drop-Shadow*/
+                            border-right: 0.1vw solid var(--color-blue-1);
+                    }
+
+                /*Texto Coluna Alternativa*/
+                    #txt-CRUD-CU-alt-labelLetter
+                    {
+                        /*Text*/
+                            font-size: 1.5vh;
+                    }
+
+                
+                /*Input Alternativa*/
+                    
+                    /*Input*/
+                        #input-CRUD-CU-alt
+                        {
+                            /*Size*/
+                                min-height: 5.8vh;
+
+                            /*Text*/
+                                font-size: 1.5vh;
+                        }
+
+                /*Fim do Input Alternariva*/
+
+                /*Checkbox Alternativa*/
+
+                    /*Checkbox (Estado Normal)*/
+                        #checkbox-CRUD-CU-alt
+                        {
+                            /*Size*/
+                                width: 60%;
+                                height: 60%;
+                            
+                                
+                            /*Border / Margin / Drop-Shadow*/
+                                border-width: 0.1vw;
+                            
+                            
+                        }
+                /*Fim do Checkbox Alternativa*/
+
+                /*Dropdown Inteligencias*/
+
+                    /*Dropdown*/
+                    #input-CRUD-CU-qv-dropdown
+                    {
+                        /*Size*/
+                            width: 60%;
+                            height: 7vh;
+
+                        /*Text*/
+                            font-size: 1.5vh;
+
+                        /*Border / Margin / Drop-Shadow*/
+                            border-width: 0.2vh;
+
+                        /*Padding*/
+                            padding-left: 5vw;
+                    }
+
+                /*Seta do Dropdown*/
+                    .input-CRUD-CU-qv-dropdown-arrow 
+                    {
+                        background-image:
+                        linear-gradient(45deg, transparent 50%, var(--color-yellow-1) 50%),
+                        linear-gradient(135deg, var(--color-yellow-1) 50%, transparent 50%);
+                    background-position:
+                        calc(80.5%) calc(50%),
+                        calc(85%) calc(50%);
+                    background-size:
+                        1.5vh 1.5vh,
+                        1.5vh 1.5vh;
+                    background-repeat: no-repeat;
+                    }
+
+            /*Fim do Dropdown Inteligencias*/
+
+            /*Botões Usuario*/
+                        
+                        /*Botão Limpar*/
+                        #btn-CRUD-CU-usu-Voltar
+                        {
+                            /*Size*/
+                                width: 50%;
+                                height: 5vh;
+                            
+                            /*Text*/
+                                font-size: 1.5vh;
+                                
+                            /*Border / Margin / Drop-Shadow*/
+                                margin-right: 0;
+                                margin-top: 3vh;
+                            
+                            /*Position*/
+                                position: relative;
+                                left: 50%;
+                                transform: translateX(-50%);
+                        }
+                    /*Botão Salvar*/
+                        #btn-CRUD-CU-usu-Salvar
+                        {
+                            /*Size*/
+                                width: 50%;
+                                height: 5vh;
+                        
+                            /*Text*/
+                                font-size: 1.5vh;
+                                
+                            
+                            /*Border / Margin / Drop-Shadow*/
+                                border: 0;
+                                margin-top: 1vh;
+                            
+                            /*Position*/
+                                position: relative;
+                                left: 50%;
+                                transform: translateX(-50%);
+                        }
+
+            /*Fim dos Botões Usuario*/
+
+            /*Icones Usuario*/
+                
+                /*Coluna Icone*/
+                    #d-CRUD-CU-usu-iconCol
+                    {
+                        display: none;
+                        
+                    }
+            /*Fim dos Icones Usuario*/
+
+            /*Foto de Perfil*/
+                /*Coluna*/
+                    #d-CRUD-U-usu-colProfilePicture
+                    {
+                        width: 100%;
+                    }                    
+                /*Imagem*/    
+                    #img-CRUD-U-usu-profilePicture
+                    {
+                        /*Size*/
+                            height: 15vh;
+
+                        /*Border / Margin / Drop-Shadow*/
+                            margin-bottom: 2vh;
+                            margin-right: 0;
+
+                        /*Position*/
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                    }             
+                    #input-imagem-user
+                    {
+                        margin-top: 1.5vh;
+                        margin-bottom: 2vh;
+                        margin-left: 0vh;
+                        
+                        width: 95%;
+
+                        border-width: 0.2vh;
+                        border-style: solid;
+                        border-radius: 0;
+                        border-color: var(--color-yellow-1);
+                    }
+                    input[type=file]::file-selector-button
+                    {
+                        font-size: 1.5vh;
+                    }
+            /*Fim da Foto de Perfil*/
+
+            /*Dropdown Tipo Usuario*/
+                
+                 /*Coluna*/
+                 #d-CRUD-U-usu-colIdAndTipoUsu
+                 {
+                     /*Size*/
+                         width: 100%;
+                 }
+
+                /*Dropdown*/
+                    #input-CRUD-CU-usu-dropdown
+                    {
+                        /*Size*/
+                            width: 95%;
+                            height: 4vh;
+
+                        /*Text*/
+                            font-size: 1.5vh;
+                            font-family: var(--font-roboto);
+
+                        /*Border / Margin / Drop-Shadow*/
+                            border-width: 0.2vw;
+                            border-style: solid;
+                            border-color: var(--color-yellow-1);
+                            margin-right: 0vw;
+                            margin-left: 0vw;
+
+                        /*Padding*/
+                            padding-left: 5vw;
+
+                    }
+
+                /*Seta do Dropdown*/
+                    .input-CRUD-CU-usu-dropdown-arrow 
+                    {
+                        background-image:
+                            linear-gradient(45deg, transparent 50%, var(--color-yellow-1) 50%),
+                            linear-gradient(135deg, var(--color-yellow-1) 50%, transparent 50%);
+                        background-position:
+                            calc(88%) calc(50%),
+                            calc(88% + 1.1vh) calc(50%);
+                        background-size:
+                            1.2vh 1.2vh,
+                            1.2vh 1.2vh;
+                        background-repeat: no-repeat;
+                    }
+            /*Fim do Dropdown Tipo Usuario*/
+
+            /*Coluna Body Usuario*/
+                #d-CRUD-CU-usu-col-body
+                {
+                    /*Size*/
+                        width: 90%;
+                    
+                }
+        /*Fim do Body*/
+            
+    /*Fim do Formulario*/   
+
+    /*LISTAR*/
+
+    /*Coluna Botões e Barra*/
+        #d-CRUD-R-colSearchBar-BTNread
+        { 
+            /*Size*/
+                width: 95%;
+                height: 10vh;
+        }    
+
+    /*Barra de Pesquisa*/ 
+
+        /*Coluna Barra de Pesquisa*/
+            #d-CRUD-R-colSearchBar
+            {
+                /*Size*/
+                    width: 100%;
+                    height: 4.9vh;
+
+                /*Position*/
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+            }
+            
+            /*Barra de Pesquisa*/
+                #d-CRUD-R-seachBar
+                {
+                    /*Size*/
+                        width: 100%;
+                        height: 4.9vh;
+                }
+
+        /*Coluna Icone*/
+            #d-CRUD-R-colSeachIco
+            {
+                /*Size*/
+                    height: 4.9vh;
+                
+                /*Border / Margin / Drop-Shadow*/
+                    border-top-left-radius: 1.5vh;
+                    border-bottom-left-radius: 1.5vh;
+                    border-width: 0.2vh;
+            }
+
+            /*Icone*/
+                #icon-CRUD-R-seachIco
+                {
+                    /*Text - (O icon é tratado como Text)*/
+                        font-size: 3.5vh;
+
+                    /*Position*/
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                }
+
+        /*Coluna Input*/
+            #d-CRUD-R-colSeachInput
+            {
+                /*Size*/
+                    height: 4.9vh;
+            }
+
+            /*Input*/
+                #input-CRUD-R-seachInput
+                {
+                    /*Text*/
+                        font-size: 1.5vh;
+
+                    /*Border / Margin / Drop-Shadow*/ 
+                        border-top-right-radius: 1.5vh;
+                        border-bottom-right-radius: 1.5vh;
+                        border-width: 0.2vh;
+                    
+                    /*Padding*/
+                        padding-left: 2vw;
+                }
+    /*Fim da Barra de Pesquisa*/     
+
+    /*Coluna Botões*/
+        #d-CRUD-R-colBTNread
+        {
+            /*Size*/
+                width: 100%;
+                height: 5vh;
+            
+            /*Position*/
+                position: absolute;
+                top: 110%;
+                left: 50%;
+                transform: translateX(-50%);
+            
+            /*Padding*/
+                padding: 0;
+        }
+
+        /*Botão Buscar*/
+            #btn-CRUD-R-btnBuscar
+            {
+                /*Size*/
+                    width: 49.25%;
+                    height: 80%;
+                
+                /*Text*/
+                    font-size: 1.5vh;
+
+                /*Border / Margin / Drop-Shadow*/ 
+                    border-radius: 1.5vh;
+  
+            }
+
+        /*Botão Novo*/
+            #btn-CRUD-R-btnNovo
+            {
+                /*Size*/
+                    width: 49.25%;
+                    height: 80%;
+            
+                /*Text*/
+                    font-size: 1.5vh;
+
+                /*Border / Margin / Drop-Shadow*/ 
+                    border-radius: 1.5vh; 
+            }
+        
+        /*Texto do Botão Novo*/
+            #txt-CRUD-R-btnNovo
+            {
+                /*Text*/
+                    font-size: 1.5vh;
+            }
+        
+        /*Paginação*/
+
+            /*Coluna Botões de Paginação*/
+                #d-paginate-previous
+                {
+                    /*Size*/
+                        width: 100%;
+                        height: 10vh;
+
+                    /*Border / Margin / Drop-Shadow*/ 
+                        margin-bottom: 2vh;
+                        margin-top: 2vh;
+                    
+                }
+            /*Botões Paginaçao (Anterior e Proximo)*/      
+                #d-paginate-previous-btn, 
+                #d-paginate-next-btn
+                {
+                    /*Text*/
+                        font-size: 1.5vh;
+                    
+                    /*Border / Margin / Drop-Shadow*/ 
+                        border-radius: 1.5vh;
+
+                    /*Padding*/
+                        padding-top: 1vh;
+                        padding-bottom: 1vh;
+                        padding-left: 5vw;
+                        padding-right: 5vw;
+
+                    /*Position*/
+                        position: absolute;
+                        top: 60%;
+                }
+                #d-paginate-previous-btn
+                {
+                    left: 20%;
+                }
+                #d-paginate-next-btn
+                {
+                    right: 20%;
+                }
+        /*Fim da Paginação*/
+
+        /*Tabela*/
+            #d-quest-voc-table, #d-estudantes-table
+            {
+                position: relative;
+                top: 3vh;
+                width: 95%;
+                overflow-x: scroll;
+            }
+            
+            #table-quest-voc, #table-estudantes-voc
+            {
+                width: 200vw;
+                border: 0.1vh solid #C7C2C2;                
+            }
+            
+            #table-quest-voc-title, #table-estudantes-title
+            {
+                height: 7vh;
+                font-size: 1.5vh;
+            }
+            
+            #table-quest-voc-id
+            {
+                width: 14vw;
+            }
+            #table-quest-voc-funcoes
+            {
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+            [id*="table-quest-voc-data-"], #table-estudante-data
+            {
+                height: 7vh;
+                font-size: 1.5vh;
+            }
+
+            #table-quest-voc-linha, 
+            #table-quest-voc-linha-intMult, 
+            #table-quest-voc-linha-func, 
+            #table-estudante-linha
+            {
+                border: 0.1vh solid #C7C2C2;
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            
+            #img-template-icons
+            {
+                color: #326CB4;
+                width: 3vh;
+                height: 3vh;
+                padding-top: 0vh;
+            }
+            
+            #table-quest-voc-linha-intMult
+            {
+                width: 20vw;
+            }
+            
+            #table-quest-voc-linha-func
+            {
+                width: 10vw;
+                position: relative;
+            }
+            
+            /* Está usando seletor pois não está funcionando */
+            tr:nth-child(odd)
+            {
+                background-color: #f2f2f2;
+            }
+            
+            /* Fim do Questionário Vocacional */
+            
+            
+            /* Páginas de Consulta de Estudantes */
+            
+            #table-estudantes-func-icon, #table-estudante-linha-func
+            {
+                color: #326CB4;
+                font-size: 2vw;
+                position: relative;
+                top: 0.40vw;
+            }
+            
+            #table-estudante-linha-func
+            {
+                top: 0;
+            }
+            
+            #table-estudantes-func
+            {
+                font-size: 1.3vw;
+                color: #326CB4;
+            }
+            
+            #table-estudante-linha-nome
+            {
+                width: 35vw;
+            }
+            
+            #d-paginate-estudante
+            {
+                width: fit-content;
+                margin: 0 auto;
+                margin-top: 4vw;
+                transform: scale(1.5vw);
+            }
+        
+        /*Fim da Tabela*/
+
+        /*Popup Excluir*/
+            /* Pop-up de Exclusão */
+                [id^="Popup-Excl-"] {
+
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.7);
+                    transition: opacity 500ms;
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                .popup 
+                {
+                    padding: 1vh;
+                    background: #ebe9e9;
+                    border-radius: 1vh;
+                    width: 60%;
+                }
+                .popup .close 
+                {
+                    top: 1vh;
+                    right: 2.5vw;
+                    font-size: 2vh;
+                }
+                #Excl-form-btn
+                {
+                    width: 10vh;
+                    font-size: 1.5vh;
+                }
+                #Trash-Icon
+                {
+                    font-size: 3vh;
+                    margin-bottom: 1vh;
+                }
+                #Popup-Excl_Title
+                {
+                    font-size: 2vh;
+                    font-family: var(--font-roboto);
+                }
+                #Excl-form-btn:hover
+                {
+                    border: 0.2vh solid;
+                    border-color: #ac8525;
+                }
+
+        /*Fim do Popup Excluir*/
+            #txt-CRUD-R-mobileWarning
+            {
+                /*Size*/
+                    width: max-content;
+
+                /*Text*/
+                    font-size: 2vh;
+                    font-family: var(--font-roboto);
+
+                /*Position*/
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                /*Display*/
+                    display: block;
+            }
+/*Fim do LISTAR*/
+        /*Botão Resultado*/
+        #btn-CRUD-R-btnVoltarListagemGeral
+        {
+            display: none;
+        }
+        #btn-CRUD-R-btnVoltarListagemGeral-mobile
+        {
+            display: block;
+
+            /*Size*/
+                width: 60%;
+                height: 5vh;
+            
+            /*BG*/
+                background-color: var(--color-yellow-1);
+            
+            /*Text*/
+                font-size: 2vh;
+                font-family: var(--font-roboto);
+
+            /*Border / Margin / Drop-Shadow*/ 
+                border-radius: 1.5vh;
+                border: 0;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+        #btn-CRUD-R-btnVoltarListagemGeral-mobile a
+        {
+            /*Text*/
+                color: var(--color-black-1);
+                text-decoration: none;
+        }
+    /*Tabela Resultados*/
+        #table-result-data
+        {
+            font-size: 1.7vh;
+        }
+}

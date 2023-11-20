@@ -1,0 +1,581 @@
+@import url("main.css");
+
+/* Container do Resultado da Inteligência */
+    #d-resultado-inteligencia
+    {
+        background-color: #326CB4;
+        height: 20vw;
+        font-family: var(--font-roboto);
+        position: relative;
+    }
+
+    /* Quadro amarelo da inteligência obtida */
+    #d-inteligencia-espacial-titulo
+    {
+        background-color: #F8FF72;
+        width: 90vw;
+        font-size: 2vw;
+        text-align: center;
+        height: 5vw;
+        box-shadow: 0px 10px 16px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0.5vw;
+        position: relative;
+        animation: inteligencia-entrada 1s ease-in;
+    }
+
+        /* Parágrado do quadro amarelo */
+        #d-inteligencia
+        {
+            position: relative;
+            top: 1vw;
+        }
+
+        /* Parágrafo para introdução da explicação */
+        #d-intelicencia-titulo
+        {
+            font-weight: bold;
+            font-family: var(--font-roboto);
+            font-size: 2vw;
+            position: relative;
+        }
+        #d-intelicencia-corpo
+        {
+            font-family: var(--font-roboto);
+            font-size: 1.5vw;
+        }
+        /* Explicação da Inteligência (também um parágrafo) */
+        #d-inteligencia-espacial-text
+        {
+            color: white;
+            width: 70vw;
+            font-size: 1.3vw;
+            text-align: start;
+            position: relative;
+            top: 5vw;
+            position: relative;
+        }
+
+/* Fim do Container do Resultado da inteligência */
+
+/*Profissoes*/
+
+    /*Titulo Profissoes*/
+        #d-resultQV-prof-title
+        {
+            /*Text*/
+                font-family: var(--font-roboto);
+                font-size: 2vw;
+                font-weight: bold;
+                text-align: center;
+            
+             /*Border / Margin / Drop-Shadow*/
+                margin-top: 3vw;
+        }
+        #d-resultQV-prof-title text
+        {
+            /*Text*/
+                color: var(--color-blue-1);
+        }
+
+    /*Row Cards*/
+        #d-resultQV-prof-row
+        {
+            /*Size*/
+                width: 60%;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            
+             /*Border / Margin / Drop-Shadow*/
+                margin-top: 2vw;
+                margin-bottom: 5vw;
+        }
+
+    /*Coluna Card*/
+        #d-resultQV-prof-cardCol
+        {
+            /*Size*/
+                width: 49.25%;
+
+            /*Border / Margin / Drop-Shadow*/
+                margin-top: 1vw;
+        }
+
+    /*Card*/
+        #d-resultQV-prof-card
+        {            
+            /*Size*/
+                width: 100%;
+                height: 100%;
+
+            /*BG*/
+                background-color: var(--color-blue-11);
+
+        }
+
+    /*Imagem Card*/
+        #img-resultQV-prof-cardImg
+        {
+            /*Size*/
+                width: 90%;
+                height: auto;
+
+            /*Border / Margin / Drop-Shadow*/
+                margin-top: 1.5vw;
+
+            /*Position*/
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+
+        /*Div Referencias Card*/
+            #d-resultQV-prof-cardRef
+            {
+                /*Size*/
+                    width: 90%;
+                    height: 65%;
+
+                /*Bg*/
+                    background-color: var(--color-white-05);
+
+                /*Position*/
+                    position: relative;
+                    top: 1.5vw;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                /*Padding*/
+                    padding: 1vw;
+            }
+
+            #txt-resultQV-prof-cardRef-link
+            {
+                /*Text*/
+                    font-family: var(--font-roboto);
+                    font-size: 1.3vw;
+                    color: var(--color-blue-1);
+                    text-decoration: underline;   
+                    text-align: center;
+
+                /*Position*/
+                    display: block;
+            }
+
+
+    /*Texto Card Referencias*/
+        #txt-resultQV-prof-cardTitleRef
+        {
+            /*Text*/
+                font-family: var(--font-roboto);
+                font-size: 2vw;
+                font-weight: bold;
+                color: var(--color-blue-1);
+                text-align: center;
+
+            /*Position*/
+                position: relative;
+                top: 15%;
+        }
+
+
+    /*Texto Card*/
+        #txt-resultQV-prof-cardTitle
+        {
+            /*Text*/
+                font-family: var(--font-roboto);
+                font-size: 2vw;
+                font-weight: bold;
+                color: var(--color-blue-1);
+                text-align: center;
+
+            /*Border / Margin / Drop-Shadow*/
+                margin-top: 1.5vw;
+                margin-bottom: 1.5vw;
+        }
+
+        /*Se o Numero total de cards for Impar*/
+            #Card-Impar  #d-resultQV-prof-cardCol
+            {
+                /*Size*/
+                    width: 30%;
+
+                /*Border / Margin / Drop-Shadow*/
+                    margin-top: -4vw;
+                    margin-bottom: 5vw;
+
+                /*Position*/
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+            }
+            #Card-Impar #d-resultQV-prof-cardRef
+            {
+                /*Size*/
+                    width: 90%;
+                    height: 65%;
+
+                /*Bg*/
+                    background-color: var(--color-white-05);
+
+                /*Position*/
+                    position: relative;
+                    top: 1.5vw;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                /*Padding*/
+                    padding: 1vw;
+                    padding-bottom: 3vw;
+            }
+        /*Coluna Texto Motivador*/
+            #d-texto-motivador
+            {
+                /*Size*/
+                    width: 98%;
+
+                /*Position*/
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+            }
+        
+        /*Titulo Texto Motivador*/
+
+        /*Corpo Texto Motivador*/
+            #d-intelicencia-corpo
+            {
+                /*Text*/
+                    font-family: var(--font-roboto);
+                    font-size: 1.3vw;
+            }
+       
+/*Fim das Profissoes */
+
+/* Container para explicação das inteligências */
+#d-inteligencias-expl-container
+{
+    /*Configuração do Body com a malha de "bolinhas" (Dot Grid)*/
+    background: white;
+    background: radial-gradient(rgba(49, 108, 180, 0.6) 0.1vw, transparent 0);
+    background-size: 2vw 2vw;
+    height: 20vw;
+    padding-bottom: 30vw;
+}
+
+    /* Div row azul onde ficam as explicações das inteligências */
+    #d-inteligencias-expl
+    {   
+        position: relative;
+        top: 2vw;
+        background: linear-gradient(99deg, #326CB4 42.46%, #1e21a3 100%);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        width: 60vw;
+        display: flex;
+        height: 25vw;
+        border-radius: 0.5vw;
+    }
+
+    /* Coluna do lado esquerdo amarelo */
+    #d-inteligencias-expl-image-col
+    {
+        background: #F1C247;
+        position: relative;
+        left: 2vw;
+        max-width: 15vw;
+        font-size: 2vw;
+        color: white;
+        height: 100%;
+
+    }
+
+    /* Imagem da coluna amarela (Lado esquerdo) */
+    #d-inteligencias-expl-image
+    {
+        width: 10vw;
+        margin-top: 2vw;
+    }
+
+    /* Lado direito (Explicações) */
+    #d-inteligencias-expl-txt
+    {
+        text-align: start;
+        margin: 2vw;
+        color: white;
+        position: relative;
+        left: 2vw;
+        width: 25vw;
+    }
+
+    /* Parágrafo de explicação da inteligência */
+    #d-inteligencias-expl-txt-p
+    {
+        position: relative;
+        top: 3vw;
+        font-size: 1.3vw;
+        width: 35vw;
+    }
+
+    /* Coluna de Botões para navegação */
+    #d-inteligecias-expl-btn
+    {
+        position: relative;
+        margin: auto auto 0;
+        bottom: 1vw;
+        right: 2vw;
+        width: max-content;
+    }
+
+    /* Botões de anterior e próximo */
+    #d-inteligecias-expl-btn-previous, 
+    #d-inteligecias-expl-btn-next
+    {
+        background-color: white;
+        font-weight: bold;
+        font-size: 1vw;
+        width: 6vw;
+        padding-top: 0.3vh;
+        padding-bottom: 0.3vh;
+        padding-left: 0.3vw;
+        padding-right: 0.3vw;
+    }
+
+/* Fim do Container para explicação das inteligências */
+
+/* Animação do pequeno card/container de explicação das inteligências múltiplas */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes inteligencia-entrada {
+	0% 
+    {
+		opacity: 0;
+	}
+	100% 
+    {
+		opacity: 1;
+	}
+}
+
+@media screen and (orientation: portrait) 
+{
+    /* Container do Resultado da Inteligência */
+        #d-resultado-inteligencia
+        {
+            padding-top: 1vh;
+            height: 30vh;
+        }
+
+    /* Quadro amarelo da inteligência obtida */
+        #d-inteligencia-espacial-titulo
+        {
+            font-size: 2vh;
+            height: 6.5vh;
+        } 
+
+    /* Parágrafo para introdução da explicação */
+        #d-intelicencia-titulo
+        {
+            font-size: 2vh;
+        }
+
+    /*Corpo Texto Motivador*/
+        #d-intelicencia-corpo
+        {
+            font-size: 1.8vh;
+        }
+
+
+    /* Explicação da Inteligência (também um parágrafo) */
+        #d-inteligencia-espacial-text
+        {
+            color: white;
+            width: 70vw;
+            font-size: 1.8vh;
+        }
+
+    /*Profissoes*/
+
+        /*Titulo Profissoes*/
+            #d-resultQV-prof-title
+            {
+                /*Text*/
+                    font-size: 2vh;
+                
+                /*Border / Margin / Drop-Shadow*/
+                    margin-top: 3vh;
+            }
+
+        /*Row Cards*/
+            #d-resultQV-prof-row
+            {
+                /*Size*/
+                    width: 70%;
+                
+                /*Border / Margin / Drop-Shadow*/
+                    margin-top: 2vh;
+                    margin-bottom: 5vh;
+            }
+
+        /*Coluna Card*/
+            #d-resultQV-prof-cardCol
+            {
+                /*Size*/
+                    width: 100%;
+
+                /*Border / Margin / Drop-Shadow*/
+                    margin-top: 2vh;
+            }
+
+        /*Imagem Card*/
+            #img-resultQV-prof-cardImg
+            {
+                /*Size*/
+                    width: 90%;
+
+                /*Border / Margin / Drop-Shadow*/
+                    margin-top: 1.5vh;
+
+            }
+
+            /*Div Referencias Card*/
+                .card-referencias #d-resultQV-prof-card
+                {
+                    padding-bottom: 3.5vh;
+                }
+                #d-resultQV-prof-cardRef
+                {
+                    /*Size*/
+                        width: 90%;
+                        height: max-content;
+
+                    /*Position*/
+                        top: 1.5vh;
+
+                    /*Padding*/
+                        padding: 2vh;
+                }
+
+                #txt-resultQV-prof-cardRef-link
+                {
+                    /*Text*/
+                        font-size: 1.3vh;
+                }
+
+
+        /*Texto Card Referencias*/
+            #txt-resultQV-prof-cardTitleRef
+            {
+                /*Position*/
+                    display: none;
+            }
+
+
+        /*Texto Card*/
+            #txt-resultQV-prof-cardTitle
+            {
+                /*Text*/
+                    font-family: var(--font-roboto);
+                    font-size: 2vh;
+                    font-weight: bold;
+                    color: var(--color-blue-1);
+                    text-align: center;
+
+                /*Border / Margin / Drop-Shadow*/
+                    margin-top: 1.5vh;
+                    margin-bottom: 1.5vh;
+            }
+
+        /*Se o Numero total de cards for Impar*/
+            #Card-Impar  #d-resultQV-prof-cardCol
+            {
+                /*Size*/
+                    width: 68%;
+
+                /*Border / Margin / Drop-Shadow*/
+                    margin-top: -3vh;
+                    margin-bottom: 5vh;
+
+                /*Position*/
+                    position: relative;
+                    left: 48%;
+                    transform: translateX(-50%);
+            }
+            #Card-Impar #d-resultQV-prof-cardRef
+            {
+                /*Size*/
+                    height:  max-content;
+
+                /*Bg*/
+
+                /*Position*/
+                    top: 1.5vh;
+
+                /*Padding*/
+                    padding: 2vh;
+                    padding-bottom: 2vh;
+            }
+
+
+    /*Fim das Profissoes */
+    
+    /* Container para explicação das inteligências */
+        #d-inteligencias-expl-container
+        {
+            /*Configuração do Body com a malha de "bolinhas" (Dot Grid)*/
+            background: radial-gradient(rgba(49, 108, 180, 0.6) 0.08vh, transparent 0);
+            background-size: 1.5vh 1.5vh;
+            height: 40vh;
+            padding-bottom: 3vh;
+        }
+
+    /* Div row azul onde ficam as explicações das inteligências */
+        #d-inteligencias-expl
+        {   
+            top: 2vh;
+            width: 90vw;
+            height: 35vh;
+            border-radius: 0.5vh;
+        }
+
+    /* Coluna do lado esquerdo amarelo */
+        #d-inteligencias-expl-image-col
+        {
+            display: none;
+        }
+
+    /* Parágrafo de explicação da inteligência */
+        #d-inteligencias-expl-txt-p
+        {
+            position: relative;
+            top: 2vh;
+            font-size: 2vh;
+            width: 36vh;
+        }
+
+    /* Botões de anterior e próximo */
+        #d-inteligecias-expl-btn-previous, 
+        #d-inteligecias-expl-btn-next
+        {
+            font-size: 1.8vh;
+            width: 20vw;
+            height: 4vh;
+            padding-top: 0.3vw;
+            padding-bottom: 0.3vw;
+            padding-left: 0.3vh;
+            padding-right: 0.3vh;
+            margin-bottom: 1.5vh;
+        }
+}

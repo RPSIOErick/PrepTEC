@@ -1,0 +1,277 @@
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* Fim Fontes */
+
+/* Sistema */
+
+:root
+{
+    --font-roboto: 'Roboto', sans-serif;
+    --color-yellow: #F1C247;
+    --color-blue: #326CB4;
+    --color-blue-strong: #005AC9;
+    --size-p-pc: 2vh;
+    --size-p-mobile: 2vh;
+    --size-p-pc-title: 4vh;
+}
+
+/* Fim do Sistema */
+
+/* Cores */
+
+:root
+{
+    --color-white: #FFF;
+    --color-light-blue: #C5D3E5;
+    --color-gray: #D7D7D7;
+}
+
+/* Fim das Cores */
+
+body /* Escurecer fundo, tá com seletor... (Arrumar depois quem quiser, até que eu arrume) */
+{
+    font-family: var(--font-roboto);
+    background-color: var(--color-gray);
+    overflow-y: hidden;
+}
+
+/* Container Simulado */
+
+#d-simu
+{
+    max-width: 60%;
+    position: relative;
+    top: 25px;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+    #d-simu-quest
+    {
+        position: relative;
+        background-color: var(--color-white);
+        box-shadow: -7px 9px 25px #0000004f;
+        border-radius: 0px 0px 10px 10px;
+        padding: 2vw;
+        margin-left: 0;
+        max-height: fit-content;
+        font-size: 1.3vw;
+    }
+
+        /* Div col do cabeçalho do questionário */
+        #d-simu-header
+        {
+            background-color: #F1C247;
+            padding-top: 1vh;
+            padding-bottom: 0.5vh;
+            font-size: var(--size-p-pc-title);
+            color: white;
+            font-weight: bold;
+            position: relative;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: -7px 9px 25px #0000004f;
+            position: relative;
+            height: fit-content;
+        }
+
+            /* Título presente no cabeçalho do simulado */
+            #d-simu-header-title
+            {
+                position: relative;
+                top: 1vh;
+                left: 1vw;
+            }
+
+            /* Numerador de questões, está no cabeçalho do simulado */
+            #d-simu-header-numerator
+            {
+                position: relative;
+                float: right;
+                bottom: 7vh;
+                right: 2vw;
+                
+            }
+
+    /* Parágrado da questão do simulado */
+    #d-simu-quest-p-question
+    {
+        position: relative;
+        font-size: 1.5vw;
+        padding-bottom: 2vw;
+    }
+
+    /* Configurações das labels + inputs do simulado (Alternativas) */
+    /* Nota: também fiz esse sem saber das ID + seletor, então está só seletor... */
+
+    /* Não mostra o radio button */
+    input[type=radio]{
+        display: none;
+    }
+
+    /* Personaliza o input radio + a label atrelada a ele */
+    input[type=radio] + label{
+        background-color: var(--color-light-blue);
+        margin-bottom: -2vw;
+        font-size: 1.3vw;
+        transition: 0.5s;
+        cursor: pointer;
+        padding: 1vh;
+    }
+
+    /* Personaliza input + label com um hover */
+    input[type=radio] + label:hover
+    {
+        border: 0.1vh solid;
+        border-color: #005AC9;
+        background-color: #326CB4;
+        color: white;
+    }
+
+    /* Personaliza o input + label caso estejam selecionados */
+    input[type=radio]:checked + label{
+        background-color: #005AC9;
+        color: white;
+        transform: scale(1.02);
+    }
+    /* Fim da Configuração dos Inputs + Labels (Alternativas) */
+
+    /* Botões anterior e próximo */
+    #d-simu-quest-btn-pn-previous,
+    #d-simu-quest-btn-pn-next
+    {
+        background-color: var(--color-blue);
+        color: white;
+        position: relative;
+        width: 10vw;
+        border-radius: 6px;
+        font-size: var(--size-p-pc);
+    }
+
+    /* Coluna dos botões (Anterior / Próximo */
+    #d-simu-quest-btns
+    {
+        position: relative;
+        top: 15px;
+        width: fit-content;
+        margin: 0 0 0 auto;
+    }
+
+    /* Não mostra a div de cabeçalho para mobile... */
+    #d-simu-header-mobile
+    {
+        display: none;
+    }
+
+/* Fim do Container Simulado */
+
+/* Responsividade Mobile */
+
+@media screen and (orientation: portrait) {
+    
+    /* Seletor... */
+    body
+    {
+        background-color: white;
+        text-align: justify;
+        font-size: 3vh;
+    }
+    
+    /* Container do simulado */
+    #d-simu
+    {
+        max-width: 100%;
+        position: relative;
+        top: 0;
+        
+    }
+
+        /* Personalização do header (Desativação do PC pra mobile) */
+        #d-simu-header, #d-simu-quest
+        {
+            box-shadow: 0px 0px 0px transparent;
+            padding: 4vh;
+            padding-top: 2vh;
+            color: black;
+            background-color: transparent;        
+        }
+
+        /* Numerador do cabeçalho mobile */
+        #d-simu-header-numerator
+        {
+            position: relative;
+            
+        }
+
+        /* Cabeçalho mobile */
+        #d-simu-header-mobile
+        {
+            display: block;
+            font-size: 3vh;
+            font-weight: bold;
+            text-align: center;
+            background-color: #F1C247;
+            color: white;
+            padding: 2vh;
+            margin-left: -2vh;
+            margin-right: -0.9vh;
+        }
+
+        /* Cabeçalho de PC (Display: none) */
+        #d-simu-header
+        {
+            background-color: transparent;
+            display: none;
+            
+        }
+
+        /* Parágrafo da questão */
+        #d-simu-quest-p-question
+        {
+            margin-bottom: 2vh;
+            font-size: 2vh;
+        }
+        /* Personalização dos Inputs de Alternativas (Semelhante ao PC) */
+        input[type=radio]{
+            display: none;
+        }
+        
+        input[type=radio] + label{
+            background-color: var(--color-light-blue);
+            margin-bottom: 0vh;
+            font-size: 2vh;
+            padding: 1vh;
+            
+        }
+        
+        input[type=radio]:checked + label{
+            background-color: #005AC9;
+            color: white;
+        }
+        
+        /* Fim da personalização dos Inputs de Alternativas */
+
+        /* Botões de Anterior e Próximo */
+        #d-simu-quest-btn-pn-previous,
+        #d-simu-quest-btn-pn-next
+        {
+            background-color: var(--color-blue);
+            color: white;
+            position: relative;
+            width: 15vh;
+            border-radius: 6px;
+            font-size: var(--size-p-pc);
+        }
+        
+        /* Coluna dos Botões Anterior e Próximo */
+        #d-simu-quest-btns
+        {
+            width: 35vh;
+            position: relative;
+            left: 1vh;
+        }
+}

@@ -1,0 +1,262 @@
+@import url("main.css");
+
+/* Div de * TESTE * para deixar o fundo escuro; Pode renomear... */
+#teste
+{
+    position: absolute;
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 100%;
+}
+/* Fim da div TESTE */
+
+
+/* Container do Questionário */
+#d-questionario
+{
+    max-width: 75%;
+    position: relative;
+    top: 2vw;
+    background-color: white;
+    border-radius: 0.3vw;
+    width: 80vw;
+    box-shadow: -10px 13px 51px -2px rgba(0, 0, 0, 0.25);
+}
+
+    /* Cabeçalho do Questionário */
+
+    #d-questionario-content
+    {
+        height: 5vw;
+        position: relative;
+        height: fit-content;
+    }
+    
+    /* Título do Questionário */
+    #d-quest-content-title
+    {
+        position: relative;
+        background-color: #BFE0FF;
+        height: fit-content;
+        margin: 1vw;
+        font-size: 2vw;
+        border-radius: 0.2vw;
+        padding: 1vw;
+        font-weight: bold;
+    }
+
+    /* Logo Presente no Título */
+    #d-questionario-content-logo
+    {
+        width: 11vw;
+        height: 10vw;
+    }
+
+    /* Fim do Cabeçalho */
+
+    /* Linha de Perguntas */
+
+    /* Div onde a pergunta está presente */
+    #d-quest-perguntas
+    {
+        /* background-color: red; */
+        margin-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    
+    /* Parágrafo da div onde a pergunta está presente */
+    #d-quest-perguntas-p
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3vw;
+        font-family: var(--font-roboto);
+    }
+
+    /* Fim da Linha de Perguntas */
+
+    /* Linha de Opções */
+    
+    /* Div row das opções de resposta */
+    #q-quest-options
+    {
+        display: flex;
+        position: relative;
+        margin-top: 2vw;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+    }
+
+    /* Configuração do Input Radio (Está em seletor pois com ID não funciona, nem a label */
+    /* Talvez eu seja incompetente */
+    input[type=radio]{
+        display: none;
+    }
+    
+    /* Configuração do input e da label (Principalmente da label) */
+    input[type=radio] + label{
+        background-color: #C5D3E5;
+        border-radius: 50%;
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    /* Configuração do input + label caso esteja com o mouse em cima (hover) */
+    input[type=radio] + label:hover
+    {
+        border: 1px solid;
+        background-color: #326CB4;
+        color: white;
+    }
+    
+    /* Configuração do input + label se eles forem selecionados */
+    input[type=radio]:checked + label{
+        background-color: #005AC9;
+        color: white;
+    }
+
+    /* Texto em baixo das opções */
+    #d-quest-op-p
+    {
+        text-align: center; /* Centralizado de acordo com as opções (creio eu) */
+        font-size: 1.3vw;
+        font-family: var(--font-roboto);
+    }
+
+    /* Fim da Linha de Opções */
+
+    /* Coluna de botões para o questionário */
+    #d-quest-voc-btn
+    {
+        width: fit-content;
+        left: 33%;
+        position: relative;
+        bottom: 1vw;
+    }
+    /* Fim da coluna de botões para o questionário */
+    
+    /* Personalização dos botões anterior e próximo */
+    #d-quest-voc-btn-previous, #d-quest-voc-btn-next
+    {
+        background-color: #326CB4;
+        color: white;
+        width: 10vw;
+        font-size: 1.3vw;
+        margin-top: 2vw;
+    }
+    /* Fim da personalização dos botões de anterior e próximo */
+
+
+/* Fim do Container do Questionário */
+@media screen and (orientation: portrait)
+{
+    #d-questionario
+    {
+        max-width: 95%;
+        top: 2vh;
+        border-radius: 0.3vh;
+        width: 100%;
+        height: max-content;
+    }
+    #d-questionario-content
+    {
+        position: relative;
+        height: fit-content;
+    }
+    
+    /* Título do Questionário */
+    #d-quest-content-title
+    {
+        position: relative;
+        background-color: #BFE0FF;
+        height: fit-content;
+        margin: 1vw;
+        font-size: 2vh;
+        border-radius: 0.2vh;
+        padding: 1vh;
+    }
+
+    /* Logo Presente no Título */
+    #d-questionario-content-logo
+    {
+        width: 15vh;
+        height: auto;
+    }
+
+    /* Parágrafo da div onde a pergunta está presente */
+    #d-quest-perguntas-p
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2vh;
+    }
+
+    /* Configuração do input e da label (Principalmente da label) */
+    input[type=radio] + label
+    {
+        width: 4vh;
+        height: 4vh;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Texto em baixo das opções */
+    #d-quest-op-p
+    {
+        text-align: center; 
+        font-size: 1.8vh;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 15%;
+        width: max-content;
+    }
+
+    /* Div row das opções de resposta */
+    #q-quest-options
+    {
+        width: 100%;
+        display: inline-block;
+    }
+
+    /*Opções de Resposta*/
+    #q-quest-op1,
+    #q-quest-op2,
+    #q-quest-op3,
+    #q-quest-op4,
+    #q-quest-op5
+    {
+        margin: 1vh;
+        display: inline-block;
+        width: 45%;
+        height: 20vh;
+        border-color: rgba(92, 133, 255, 0.5);
+        border-width: 0.1vh;
+        border-style: solid;
+        position: relative;
+    }
+
+    /* Coluna de botões para o questionário */
+    #d-quest-voc-btn
+    {
+        width: max-content;
+        position: relative;
+        right: 17%;
+    }
+
+    /* Personalização dos botões anterior e próximo */
+    #d-quest-voc-btn-previous, 
+    #d-quest-voc-btn-next
+    {
+        background-color: #326CB4;
+        color: white;
+        width: 15vh;
+        font-size: 1.8vh;
+        margin-top: 1vh;
+        margin-bottom: 3vh;
+    }
+}

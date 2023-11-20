@@ -1,0 +1,868 @@
+@import url("main.css");
+
+/*Sistema*/
+    :root
+    {
+        --size-dot-size: 0.15vw;
+        --size-dot-gap: 3vw;
+        --size-txt-btn-yp: 2vh;
+    }
+/*Fim do Sistema*/
+
+
+/*Pagina*/
+
+  #svg-blue-curve
+    {
+        position: absolute;
+        left: 0;
+        z-index: -2;
+        margin-top: -5%;
+    }
+
+    /*Parte 1 - Oque é Etec?/ O que é Vestibulinho?*/
+        #d-part1-father
+        {
+            width: 100%;
+            height: 90%;
+        }
+        #d-part1-row
+        {
+            width: 90%; 
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%);
+        }
+
+        /*Lousa*/
+            #d-part1-brd-column
+            {
+                margin-top: 23%;
+                width: 33.3%;
+            }
+            #d-part1-brd-design
+            {
+                padding: 5%;
+                background-color: var( --color-green-1);
+                width: 85%;
+                height: 15vw;
+                border: 0.7em solid var(--color-brown-1);
+                border-radius: 5px;
+
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        /*Fim da Lousa*/
+
+        /*Botoes Lousa*/
+            #btn-part1-brd
+            {
+                border: none;
+                background-color: transparent;
+                width: 20%;
+                height: 20%;
+            }
+            #img-part1-btn-brd
+            {
+                width: 60%;
+                height: 60%;
+            }
+        /*Fim dos Botoes Lousa*/
+
+        /*Texto Explicativo*/
+            #txt-part1-brd-etec-title, 
+            #txt-part1-brd-vest-title
+            {
+                color: white;
+                font-size: var(--size-title-2);
+                font-family: var(--font-fredericka);
+            }
+            #d-part1-exp-column
+            {
+                margin-top: 23%;
+                width: 60%;
+                height: auto;
+                margin-left: 5%;
+                height: fit-content;
+            }
+            #txt-part1-exp-etec, 
+            #txt-part1-exp-vest
+            {
+                font-family: var(--font-roboto);
+                font-size: var(--size-main-content);
+            }
+            #txt-part1-brd-vest-title,
+            #txt-part1-exp-vest
+            {
+                display: none; 
+            }
+        /*Fim do Texto Explicativo*/
+    /*Fim da Parte 1*/
+
+    /*Parte 2 - Modalidades*/
+        #d-part2-father
+        {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            /*Configuração da DIV com a malha de "bolinhas" (Dot Grid)*/
+            background: var(--color-white);
+            background: radial-gradient(var(--color-blue-1-05) var(--size-dot-size), transparent 0);
+            background-size: var(--size-dot-gap) var(--size-dot-gap );
+        }
+        /*Papel Amarelo*/
+            #d-part2-yp-back,
+            #d-part2-yp-front 
+            {
+                width: 80%;
+                height: 60%;            
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);  
+            }
+            #d-part2-yp-back
+            {
+                background: var(--color-yellow-7);
+                margin-left: 1%;
+                margin-top: -1%;
+            }
+            #d-part2-yp-front
+            {
+                background: var(--color-yellow-6);
+                z-index: 9;  
+            }
+
+            #d-part2-yp-circle1, 
+            #d-part2-yp-circle2, 
+            #d-part2-yp-circle3
+            {
+                background-color: var(--color-yellow-7);
+                width: 5vh;
+                height: 5vh;
+                border-radius: 50%;
+                margin-left: 4%;
+                position: absolute;
+                transform: translateY(-50%)
+            }
+            #d-part2-yp-circle1
+            {
+                top: 25%;
+            }
+            #d-part2-yp-circle2
+            {
+                top: 50%;
+            }
+            #d-part2-yp-circle3
+            {
+                top: 75%;
+            }
+        /*Fim do Papel Amarelo*/
+
+
+        /*Textos do Papel Amarelo*/
+            #d-part2-yp-exp-mtec, 
+            #d-part2-yp-exp-mtec-pi,
+            #d-part2-yp-exp-mtec-n, 
+            #d-part2-yp-exp-ams 
+            {
+                display: none;
+            }
+            #txt-part2-yp-exp-title
+            {
+                font-family: var(--font-syncopate);
+                font-size: var(--size-title-2);
+                margin-top: 5%;
+            }
+            #txt-part2-yp-exp
+            {
+                font-family: var(--font-roboto);
+                font-size: var(--size-main-content);
+                margin-right: 3%;
+                margin-left: 11%;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+            #txt-part2-yp-exp-title-tecnico
+            {
+                font-family: var(--font-syncopate);
+                font-size: var(--size-title-2);
+                margin-top: 10%;
+                margin-left: 10%;
+            }
+            #d-part2-yp-exp-tecnico-row
+            {
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #d-part2-yp-exp-tecnico-column-txt
+            {
+                width: 60%;
+            }
+            #d-part2-yp-exp-tecnico-column-post-it 
+            {
+                position: absolute;
+                left: 80%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 35%;
+            }
+            #d-part2-yp-exp-tecnico-post-it
+            {
+                position: relative;
+                background-color: var(--color-pink-1);
+                width: 100%;
+                height: 25vw;
+                padding: 5%;
+                font-family: var(--font-roboto);
+                font-size: var(--size-main-content);
+                text-align: left;
+            }
+        /*Fim do Textos Papel Amarelo*/
+
+        /*Botão Proximo Papel Amarelo*/
+            #btn-part2-yp
+            {
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-family: var(--font-roboto);
+                font-size: var(--size-txt-btn-yp);
+                border: none;
+                background-color: transparent;
+                opacity: 60%;
+            }
+       
+    /*Fim da Parte 2*/
+    
+    /*Parte 3 - Unidades*/
+   
+        #d-part3-father
+        {
+            max-width: 100%;
+            height: 100%;
+            background-color: var(--color-blue-5);
+            position: relative;
+        }
+
+        /*Botoes Anterior e Proximo*/
+
+            /*Esconde a Checbox atras*/
+                #d-part3-book-btn-hidden-1
+                {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 7;
+                    width: 10%;
+                    height: 11%;
+                    background-color: var(--color-blue-5);
+                    pointer-events: none;
+                }
+                #d-part3-book-btn-hidden-2
+                {
+                    position: absolute;
+                    top: 50%;
+                    left: 91%;
+                    transform: translateY(-50%);
+                    z-index: 7;
+                    width: 8%;
+                    height: 11%;
+                    background-color: var(--color-blue-5);
+                    pointer-events: none;
+                }
+            /*Fim do Esconde a Checbox atras*/
+            
+            /*Checkboxes para o funcionamento do botão*/
+                .checkbox-part3-book
+                {
+                    border: none;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 10%;
+                    height: 10%;
+                    left: 90%;
+                    cursor: pointer;
+                }
+                .checkbox-part3-book:checked
+                {
+                    left: 0.5%;
+                }
+
+                #checkbox-part3-book-1{z-index: 6;}
+                #checkbox-part3-book-2{z-index: 5;}
+                #checkbox-part3-book-3{z-index: 4;}
+                #checkbox-part3-book-4{z-index: 3;}
+                #checkbox-part3-book-5{z-index: 2;}
+                #checkbox-part3-book-6{z-index: 1;}    
+
+                #checkbox-part3-book-1:checked{z-index: 1;}
+                #checkbox-part3-book-2:checked{z-index: 2;}
+                #checkbox-part3-book-3:checked{z-index: 3;}
+                #checkbox-part3-book-4:checked{z-index: 4;}
+                #checkbox-part3-book-5:checked{z-index: 5;}
+                #checkbox-part3-book-6:checked{z-index: 6;}
+
+                #checkbox-part3-book-1:checked ~ #d-part3-book-cover #d-part3-book-conj1 
+                {
+                    transform: rotateY(-180deg);
+                    z-index: 1;
+                }
+                #checkbox-part3-book-2:checked ~  #d-part3-book-cover #d-part3-book-conj2 
+                {
+                    transform: rotateY(-180deg);
+                    z-index: 2;
+                }
+                #checkbox-part3-book-3:checked ~  #d-part3-book-cover #d-part3-book-conj3 
+                {
+                    transform: rotateY(-180deg);
+                    z-index: 3;
+                }
+                #checkbox-part3-book-4:checked ~  #d-part3-book-cover #d-part3-book-conj4 
+                {
+                    transform: rotateY(-180deg);
+                    z-index: 4;
+                }
+                #checkbox-part3-book-5:checked ~  #d-part3-book-cover #d-part3-book-conj5 
+                {
+                    transform: rotateY(-180deg);
+                    z-index: 5;
+                }
+                #checkbox-part3-book-6:checked ~  #d-part3-book-cover #d-part3-book-conj6 
+                {
+                    transform: rotateY(-180deg);
+                    z-index: 6;
+                }
+            /*Fim do Checkboxes para o funcionamento do botão*/
+
+            /*Icone Botões*/
+                #img-part3-book-btn-back
+                {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 9%;
+                    height: 10%;
+                    left: 0.5%;
+                    z-index: 8;
+                    pointer-events: none;
+                }
+                #img-part3-book-btn-next
+                {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 9%;
+                    height: 10%;
+                    left: 90.5%;
+                    z-index: 8;
+                    pointer-events: none;
+                }
+
+            /*Fim do Icone Botões*/
+
+        /*Fim dos Botoes Anterior e Proximo*/
+
+        /*Livro*/
+            #d-part3-book-cover
+            {
+                background-color: var(--color-red-1);
+                border-radius: 2vh;
+                width: 80%;
+                height: 46vw;  
+                display: flex;
+            }
+            .d-part3-book-pages
+            {
+                background-color: var(--color-white);
+                width: 47.5%;
+                height: 44vw;  
+            }
+            #d-part3-book-page-start
+            {
+                position: relative;
+                top: 1vw;
+                left: 2%;
+                padding: 3vh;
+            }
+            #d-part3-book-perspective
+            {
+                width: 48.5%;
+                height: 44vw;
+                position: relative;
+                perspective: 900vh;
+                top: 1vw;
+                left: 3%;
+            }
+            .d-part3-book-page-front 
+            {
+                position: absolute;
+                width: 98%;
+                height: 44vw;
+                top: 0;
+                right: 0;
+                padding: 3vh;
+            }
+            .d-part3-book-page-back 
+            {
+                position: absolute;
+                width: 98%;
+                height: 44vw;
+                top: 0;
+                right: 0;
+                z-index: 99;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                padding: 3vh;
+            }
+            #d-part3-book-page-end
+            {
+                position: relative;
+                padding: 3vh;
+                left: 1.5%;
+                width: 98%;
+            } 
+        /*Fim do Livro*/
+
+        /*Textos do Livro*/
+            /*1 - Pagina Inicial / 2 - Pagina Final*/
+            #txt-part3-book-title
+            {
+                font-family: var(--font-roboto);
+                font-size: 2.4vw;
+                text-align: center;
+            }
+            #txt-part3-book-title-1
+            {
+                font-family: var(--font-syncopate);
+                font-size: 3vw;
+                text-align: center;
+            }
+            #txt-part3-paper-explanation
+            {
+                font-family: var(--font-roboto);
+                font-size: 1.3vw;
+            }
+            #txt-part3-paper-explanation-1
+            {
+                font-family: var(--font-roboto);
+                font-size: 1.8vw;
+                position: relative;
+                left: 5vh;
+            } 
+            #txt-part3-paper-explanation-2
+            {
+                font-family: var(--font-roboto);
+                font-size: 2vw;
+                text-align: center;
+            }
+            #txt-part3-book-watermark
+            {
+                font-family: var(--font-roboto);
+                font-size: 1vw;
+                position: absolute;
+                bottom: 0;
+                right: 2vh;
+            }
+            #txt-part3-book-btn-cnct
+            {
+                text-decoration: none;
+                color: black;
+            }
+            /*Coluna Titulo + Texto*/
+                .d-part3-book-conjs 
+                {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    transform-origin: left;
+                    transform-style: preserve-3d;
+                    transform: rotateY(0deg);
+                    transition: .5s;
+
+                }
+                #d-part3-book-conj1 {z-index: 6;}
+                #d-part3-book-conj2 {z-index: 5;}
+                #d-part3-book-conj3 {z-index: 4;}
+                #d-part3-book-conj4 {z-index: 3;}
+                #d-part3-book-conj5 {z-index: 2;}
+                #d-part3-book-conj6 {z-index: 1;}
+
+            /*Fim da Coluna Titulo + Texto*/
+           
+        /*Fim dos Textos do Livro*/
+        
+   
+       
+    /*Fim da parte 3*/
+
+    /*Parte 4*/
+        #d-part4-father
+        {
+            max-width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /*Parte Unidades*/
+            #d-part4-col-unidades
+            {
+                height: 49vw;
+                position: relative;
+            }
+            #txt-part4-unidades-title
+            {
+                font-family: var(--font-syncopate);
+                font-size: 5vw;
+                color: var(--color-blue-1);
+                position: absolute;
+                left: 50%;
+                top: 25vh;
+                transform: translateX(-50%);
+            }
+            #txt-part4-unidades-exp
+            {
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 38vh;
+                transform: translateX(-50%);
+                text-align: center;
+            }
+            #txt-part4-unidades-outrasCid
+            {
+                width: 100%;
+                font-size: 1vw;
+                font-family: var(--font-roboto);
+                position: absolute;
+                text-align: center;
+                bottom: 8.5vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            #txt-part4-unidades-outrasCid-2
+            {
+                color: var(--color-blue-6);
+                width: 100%;
+                font-size: 1vw;
+                font-family: var(--font-roboto);
+                position: absolute;
+                text-align: center;
+                bottom: 7vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        /*Fim da Parte Unidades*/
+
+        /*Parte Mapa*/
+            #d-part4-col-mapa
+            {
+                background-color: var(--color-yellow-1);
+                height: 49vw;
+                position: relative;
+            }
+            #map-part4-etecsSP
+            {
+                margin-top: 1vw;
+                width: 75% ;
+                height: 43vw;
+            }
+            #txt-part4-mapa-atualizacao
+            {
+                font-family: var(--font-roboto);
+                font-size: 1vw;
+                position: absolute;
+                bottom: 1vw;  
+                left: 50%;
+                transform: translateX(-50%);
+            } 
+        /*Fim da Parte Mapa*/   
+    /*Fim da Parte 4*/
+
+        #d-part3-father-mobile
+        {
+            display: none;
+        }
+/*Fim da Pagina*/
+
+/*Reponsividade para Mobile*/
+
+    @media screen and (orientation: portrait)
+    {
+        :root
+        {
+            --size-dot-size: 0.15vh;
+            --size-dot-gap: 3vh;
+            --size-txt-btn-yp: 2vh;
+        }
+        /*Parte 1 - Oque é Etec?/ O que é Vestibulinho?*/ 
+            #d-part1-father
+            {
+                height: 100vh;
+            }
+
+            /*Lousa*/
+                #d-part1-brd-column
+                {
+                    width: 100%;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                #d-part1-brd-design
+                {
+                    width: 35vh;
+                    height: 100%;
+            
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            /*Fim da Lousa*/
+
+            /*Botoes Lousa*/
+                #btn-part1-brd
+                {
+                    width: 40%;
+                    height: 40%;
+                }   
+             /*Fim dos Botoes Lousa*/
+
+            /*Texto Explicativo Lousa*/
+                #txt-part1-brd-etec-title, 
+                #txt-part1-brd-vest-title
+                {
+                    font-size: var(--size-title-2);
+                }
+                #d-part1-exp-column
+                {
+                    width: 100%;
+                    margin-top: 12%;
+                    margin-left: 0%;
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+                #txt-part1-exp-etec, 
+                #txt-part1-exp-vest
+                {
+                    font-size: var(--size-main-content);
+                }
+            /*Fim do Texto Explicativo Lousa*/
+
+        /*Fim da Parte 1*/
+        
+        /*Parte 2 - Modalidades*/
+
+            #d-part2-father
+            {
+                /*Configuração da DIV com a malha de "bolinhas" (Dot Grid)*/
+                background: var(--color-white);
+                background: radial-gradient(var(--color-blue-1-05) var(--size-dot-size), transparent 0);
+                background-size: var(--size-dot-gap) var(--size-dot-gap );
+                height: 100vh;
+            }
+
+            /*Papel Amarelo*/
+                #d-part2-yp-back,
+                #d-part2-yp-front 
+                {
+                    width: 90%;
+                    height: 95vh;            
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);  
+                }
+            /*Fim do Papel Amarelo*/
+
+            /*Textos do Papel Amarelo*/
+                #txt-part2-yp-exp-title
+                {
+                    font-size: var(--size-title-2);
+                }
+                #txt-part2-yp-exp
+                {
+                    font-size: var(--size-main-content);
+                    text-align: center;
+                    text-justify: none;
+                    margin-right: 0%;
+                    margin-left: 0%;
+                    width: 65%;
+                }
+                #txt-part2-yp-exp-title-tecnico
+                {
+                    margin-top: 5%;
+                    margin-left: 0%;
+                    font-size: var(--size-title-2);
+                }
+                #d-part2-yp-exp-tecnico-column-txt
+                {
+                    width: 100%;
+                }
+                #d-part2-yp-exp-tecnico-column-post-it
+                {
+                    position: relative;
+                    left: 50%;
+                    top: 0%;
+                    transform: translate(-50%, 0%);
+                    width: 80%;
+                }
+                #d-part2-yp-exp-tecnico-post-it
+                {
+                    margin-left: 5%;
+                    width: 100%;
+                    height: auto;
+                    font-size: var(--size-main-content);
+                }
+                #txt-part2-yp-exp-title-object
+                {
+                    display: block;
+                }
+            /*Fim do Textos Papel Amarelo*/
+
+        /*Fim da Parte 2*/
+        
+        /*Parte 3 - Eixos Tecnologicos*/
+            #d-part3-father
+            {
+                display: none;
+            }
+            #d-part3-father-mobile
+            {
+                display: block;
+                width: 100%;
+                height: 100vh;
+                background-color: var(--color-blue-5);
+            }
+            /*Livro*/
+                #d-part3M-book-cover
+                {
+                    background-color: var(--color-red-1);
+                    border-radius: 2vh;
+                    width: 90%;
+                    height: 85vh;
+                    top: 2%;
+                }
+                #d-part3M-book-paper
+                {
+                    background-color: var(--color-white);
+                    width: 95%;
+                    height: 95%;
+                    padding: 2vh;
+                }
+                #d-part3M-page2,
+                #d-part3M-page3,
+                #d-part3M-page4,
+                #d-part3M-page5,
+                #d-part3M-page6,
+                #d-part3M-page7,
+                #d-part3M-page8,
+                #d-part3M-page9,
+                #d-part3M-page10,
+                #d-part3M-page11,
+                #d-part3M-page12,
+                #d-part3M-page13,
+                #d-part3M-page14
+                {
+                    display: none;
+                }
+            /*Fim do Livro*/
+
+            /*Textos Livro*/
+                #txt-part3-book-title
+                {
+                    font-size: var(--size-title);
+                }
+                #txt-part3-book-title-1
+                {
+                    font-size: var(--size-title);
+                }
+                #txt-part3-paper-explanation
+                {
+                    font-size: 3.7vw;
+                }
+                #txt-part3-paper-explanation-2
+                {
+                    font-size: 4vw;
+                }
+                #txt-part3-book-btn-cnct
+                {
+                    text-decoration: none;
+                    color: black;
+                    font-family: var(--font-roboto);
+                    font-size: var(--size-main-btn);
+
+                }
+                #btn-template-size 
+                {
+                    width: 44vw !important;
+                    height: 8vh !important;
+                }
+            /*Fim dos Textos Livro*/
+
+            /*Botão Proximo*/
+                #btn-part3-next
+                {
+                    width: 24vh;
+                    height: 12vw;
+                    top: 5%;
+                }
+                
+        /*Fim da Parte 3*/
+
+        /*Parte 4 - Unidades*/
+
+            /*Parte Unidades*/
+                #d-part4-col-mapa,
+                #d-part4-col-unidades
+                {
+                    width: 100%;
+                    margin-bottom: 2vh;
+                }
+                #d-part4-col-mapa
+                {
+                    height: 60vh;
+                }
+                #txt-part4-unidades-title
+                {
+                    top: 5%;
+                    font-size: var(--size-title);
+                }
+                #txt-part4-unidades-exp
+                {
+                    top: 20%;
+                    font-size: var(--size-main-content);
+                }
+                #txt-part4-unidades-outrasCid
+                {
+                    top: 65%;
+                    font-size: 4vw;
+                }
+                #txt-part4-unidades-outrasCid-2
+                {
+                    top: 90%;
+                    font-size: 4vw;
+                }
+            /*Fim da Parte Unidades*/
+            
+            /*Parte Mapa*/
+                #map-part4-etecsSP
+                {
+                    height: 50vh;
+                    margin-top: 5vh;
+                }
+                #txt-part4-mapa-atualizacao
+                {
+                    width: max-content;
+                    font-size: 4vw;
+                    top: 1vh;
+                }  
+            /*Fim da Parte Mapa*/
+
+        /*Fim da Parte 4*/
+    }
+
+/*Fim da Reponsividade para Mobile*/

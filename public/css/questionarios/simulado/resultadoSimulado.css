@@ -1,0 +1,224 @@
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* Fim Fontes */
+
+/* Sistema */
+
+:root
+{
+    --font-roboto: 'Roboto', sans-serif;
+    --size-p-pc: 2vh;
+    --size-p-mobile: 2vh;
+    --size-p-pc-title: 4vh;
+}
+
+body
+{
+    background-color: #D7D7D7;
+    padding-bottom: 10vh;
+}
+
+/* Fim do Sistema */
+
+/* Cores */
+
+:root
+{
+    --color-white: #FFF;
+    --color-light-blue: #C5D3E5;
+    --color-blue: #326CB4;
+    --color-blue-strong: #005AC9;
+    --color-gray: #D7D7D7;
+    --color-yellow: #F1C247;
+}
+
+/* Fim das Cores */
+
+/* Container do Resultado */
+
+#d-result-simu
+{
+    max-width: 70%;
+    position: relative;
+    top: 35px;
+    text-align: center;
+    width: fit-content;
+    background-color: var(--color-white);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: -7px 9px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+    /* Cabeçalho */
+    #d-result-simu-header
+    {
+        background-color: var(--color-yellow);
+        position: relative;
+        border-radius: 10px 10px 0px 0px;
+        height: 10vw;
+    }
+
+        #d-result-simu-header-img
+        {
+            position: relative;
+            width: 8vw;
+        }
+
+        #d-result-simu-header-title
+        {
+            font-size: 2vw;
+            font-family: var(--font-roboto);
+            color: var(--color-white);
+            position: relative;
+            font-weight: bold;
+        }
+
+    /* Fim do Cabeçalho */
+
+    /* Div row que mostra os dados obtivos (acertos, erros...) */
+    #d-result-simu-data
+    {
+        margin-top: -2vw;
+    }
+
+        #d-result-simu-data-p
+        {
+            font-size: 2vw;
+            position: relative;
+            top: 3vw;
+        }
+
+        /* Imagem do lado esquerdo */
+        #d-result-simu-data-img
+        {
+            position: relative;
+            padding: 15px;
+            left: 2vw;
+            width: 30vw;
+        }
+
+        /* Lado Direito onde aparece o parágrafo informacional */
+        #d-result-simu-data-RW-p
+        {
+            position: relative;
+            top: 50%;
+            right: 5vw;
+            transform: translateY(-50%);
+            font-size: 2vw;
+        }
+
+        /* Elementos que aparecem só no mobile */
+        #d-result-simu-data-RW-p-mobile, #d-result-simu-confirm-btn-mobile, #d-result-simu-header-mobile
+        {
+            display: none;
+        }
+
+        /* Botão de confirmação */
+        #d-result-simu-confirm-btn
+        {
+            font-size: 2vh;
+            font-weight: bold;
+            position: relative;
+            background-color: #F1C247;
+            width: 15vh;
+            color: white;
+        }
+
+/* Fim do Container do Resultado */
+
+/* Responsividade Mobile */
+
+@media screen and (orientation: portrait){
+
+    body
+    {
+        background: rgb(50,108,180);
+        background: linear-gradient(175deg, rgba(50,108,180,255) 15%, rgba(0,87,177,1) 100%);
+        color: white;
+    }
+
+    /* Container do Resultado */
+        #d-result-simu
+        {
+            box-shadow: none;
+            height: fit-content;
+            max-width: 50vh;
+            background-color: transparent;
+        }
+
+    /* Cabeçalho e Botão*/
+        #d-result-simu-header, 
+        #d-result-simu-confirm-btn
+        {
+            display: none;
+        }
+
+    /*Cabeçalho Mobile*/
+        #d-result-simu-header-mobile
+        {
+            display: block;
+            position: relative;
+            margin: 1vh;
+            border-radius: 1vh;
+            animation-name: header-intro;
+            animation-duration: 0.5s; 
+        }    
+
+        #d-result-simu-header-title
+        {
+            font-weight: lighter;
+            font-size: 3vh;
+        }
+        #d-result-simu-header-img
+        {
+            width: 25vh;
+        }
+    /*Fim do Cabeçalho Mobile*/
+
+    /*Imagem e Texto Simu Desktop*/
+        #d-result-simu-data-img-col
+        {
+            display: none;
+        }
+        #d-result-simu-data-RW-p
+        {
+            display: none;
+        }
+    /*Fim da Imagem e Texto Simu Desktop*/
+
+    /*Texto e Botão Simu Mobile*/
+        #d-result-simu-data-RW-p-mobile
+        {
+            font-size: 3vh;
+            margin-top: 1vh;
+            display: block;
+        }
+        #d-result-simu-confirm-btn-mobile
+        {
+            display: block;
+            font-size: 2vh;
+            font-weight: bold;
+            position: relative;
+            top: 50px;
+            background-color: #F1C247;
+            width: 15vh;
+        }
+    /*Fim do Texto e Botão Simu Mobile*/
+    
+    /* Animação de Entrada */
+        @keyframes header-intro {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    /* Fim da Animação de Entrada */
+
+}
+
+/* Fim da Responsividade Mobile */

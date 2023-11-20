@@ -1,0 +1,271 @@
+@import url("main.css");
+/*Sistema*/
+    :root
+    {
+        /*Cores*/
+        --color-dot: rgba(49, 108, 180, 0.6);
+        --color-bg-color: white;
+        --color-bg-card-amalho: #DDDD5B;
+        --color-bg-card-laranjo: #F58F3A;
+        --color-bg-card-locked-amalho: #f0f0a6;
+        --color-bg-card-locked-laranjo: #f8b47c;
+        --color-card-shadown: #bbbbbb;
+        /*Tamanhos*/
+        --size-dot-size: 0.1vw;
+        --size-dot-gap: 2vw;
+    }
+    #body-area-do-aluno
+    {
+        overflow-x: hidden;
+        /*Configuração do Body com a malha de "bolinhas" (Dot Grid)*/
+        background: var(--color-bg-color);
+        background: radial-gradient(var(--color-dot) var(--size-dot-size), transparent 0);
+        background-size: var(--size-dot-gap) var(--size-dot-gap );
+    }
+/*Fim do Sistema*/
+
+
+/*Reponsividade para Desktop*/
+
+    /*Desktop*/
+
+        /*Container Principal*/
+            #div-container-main
+            {
+                margin: 1.5vh;
+            }
+
+        /*Coluna Imagem de Perfil e Coluna Rendimento Total*/
+            #div-profile-info, 
+            #div-rend-total
+            {
+                margin-right: 1.5vh;
+                width: 25vh;
+                height: auto;
+            }
+
+        /*Imagem de Perfil*/
+            #img-profile-areaAlu
+            {
+                width: 15vh;
+                height: auto;
+                border-radius: 0.8vw;
+            }
+
+        /*Coluna Rendimento Semanal*/
+            #div-rend-semanal
+            {
+                width: 63%;
+                height: 16vw;
+                padding-top: 1.5vh;
+            }
+
+        /*Coluna Rendimento Semanal e Coluna Rendimento Mensal*/
+            #div-rend-semanal, 
+            #div-rend-mensal
+            {
+                margin-right: 1.5vh;
+                background-color: var( --color-yellow-1);
+                /*Tamanhos*/
+                box-shadow:  0.5vw 0.5vw 0.2vw var(--color-card-shadown);
+            }
+
+        /*Titulo Colunas Rendimento*/
+            #txt-rend-title
+            {
+                font-size: 1.2vw;
+                font-family: var(--font-roboto);
+                font-weight: bold;
+            }
+
+        /*Grafico Rendimento Semanal*/
+            #grafico-rendS
+            {
+                position: relative;
+                width: auto;
+                height: 13.5vw;
+                bottom: 3vw;
+            }
+        
+        /*Textos dentro do Grafico Rendimento Semanal*/
+            #grafico-rendS text, 
+            #grafico-rendM text
+            {
+                font-size: 1.6vh;
+                font-family: var(--font-roboto);
+            }
+
+        /*Coluna Rendimento Total*/    
+            #div-rend-total
+            {
+                width: 12.5%;
+                background-color: var(--color-purple-1);
+                /*Tamanhos*/
+                padding-top: 1.5vh;
+                box-shadow:  0.5vw 0.5vw 0.2vw var(--color-card-shadown);
+                padding-bottom: 5vh;
+            }
+        
+        /*Texto da Coluna Rendimento Total*/
+            #txt-rendt
+            {
+                font-family: var(--font-roboto);
+                font-size: 1.2vw;
+            }
+
+        /*Coluna Rendimento Mensal*/
+            #div-rend-mensal
+            {
+                padding-top: 1.5vh;
+                padding-bottom: 1vw;
+                margin-top: 1.5vh;
+                width: 90.5vw;
+                height: 16vw;
+            }
+
+        /*Grafico Rendimento Mensal*/
+            #grafico-rendM
+            {
+                position: relative;
+                width: auto;
+                height: 13.5vw;
+                bottom: 3vw;
+            }
+
+        /*Botão Simulado*/
+            #btn-azuis
+            {
+                background-color: var(--color-blue-1);
+                /*Textos*/
+                font-weight: 400;
+                font-size: var(--size-main-btn);
+                color: white;
+                /*Tamanhos*/
+                padding: 0.1vw;
+                border-radius: 2.5vw;
+                width: 40vh;    
+                border: none;
+            }
+    /*Fim do Desktop*/
+
+    /*Mobile*/
+
+        /*Grafico Rendimento Mensal Mobile*/
+            #grafico-rendM-mobile
+            {
+                display: none;
+            }
+
+        /*Grafico Rendimento Semanal*/
+            #grafico-rendS-mobile
+            {
+                display: none;
+            }
+
+    /*Fim do Mobile*/
+/*Fim da Reponsividade para Desktop*/
+
+/*Reponsividade para Mobile*/
+    @media screen and (orientation: portrait)
+    {
+        /*Sistema*/
+            :root
+            {
+                --size-dot-size: 0.2vw;
+                --size-dot-gap: 3vw;
+            }
+        /*Fim do Sistema*/
+
+        /*Mobile*/
+            
+            /*Coluna Imagem de Perfil e Botão Simulado*/
+                #div-profile-info, 
+                #btn-azuis
+                {
+                    width: 40vw;
+                    height: auto;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+            /*Coluna Rendimento Semanal*/
+                #div-rend-semanal
+                {
+                    margin-bottom: 1.5vh;
+                }
+
+            /*Coluna Rendimento Semanal, Coluna Rendimento Mensal e Coluna Rendimento Total*/
+                #div-rend-semanal,
+                #div-rend-mensal, 
+                #div-rend-total
+                {
+                    width: 95vw;
+                    height: fit-content;
+                } 
+
+            /*Titulo Colunas Rendimento*/
+                #txt-rend-title
+                {
+                    font-size: var(--size-title);
+                } 
+
+            /*Grafico Rendimento Semanal Mobile*/    
+                #grafico-rendS-mobile
+                {
+                    display: block;
+                    position: relative;
+                    width: auto;
+                    height: 50vh;
+                }
+
+            /*Textos dentro do Grafico Rendimento Semanal*/
+                #grafico-rendS-mobile text, 
+                #grafico-rendM-mobile text
+                {
+                    font-size: 3.5vw;
+                    font-family: var(--font-roboto);
+                }
+
+            /*Texto Rendimento Total*/
+                #txt-rendt
+                {
+                    font-size: 1.7vh;
+                }
+
+            /*Grafico Rendimento Mensal Mobile*/  
+                #grafico-rendM-mobile
+                {
+                    display: block;
+                    position: relative;
+                    width: auto;
+                    height: 100vh;
+                }
+
+            /*Botão Simulado*/
+                #btn-azuis
+                {
+                    font-size: 4vw;
+                    margin: 1vw;
+                    display: block;
+                    padding: 0.1vh;
+                    border-radius: 2.5vh;
+                }
+        /*Fim do Mobile*/
+
+        /*Desktop*/
+
+            /*Grafico Rendimento Mensal Desktop*/  
+                #grafico-rendM
+                {
+                    display: none;
+                }
+            /*Grafico Rendimento Semanal Desktop*/  
+                #grafico-rendS
+                {
+                    display: none;
+                }
+
+        /*Fim do Desktop*/
+    }
+/*Fim da Reponsividade para Mobile*/

@@ -1,0 +1,382 @@
+@import url('main.css');
+
+/*Coluna Titulo Parte 1*/
+#d-gs-part1-titleCol
+{
+    width: 100%;
+    height: 22.5vw;
+    background-color: var(--color-blue-1);
+    position: relative;
+}
+    /*Titulo Parte 1*/
+    #txt-gs-part1-titleCol-title
+    {
+        font-family: var(--font-dongle);
+        font-size: 2.7vw;
+        color: var(--color-white);
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 10vh;
+        transform: translateX(-50%);
+    }
+    
+    /*Texto Explicativo Principal*/
+    #txt-gs-part1-titleCol-text
+    {
+        font-family: var(--font-roboto);
+        font-size: 1.2vw;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 20vh;
+        transform: translateX(-50%);
+        color: var(--color-white)
+    }
+
+    /*Card*/
+
+        /*Coluna Card*/
+        #d-gs-part1-cardCol
+        {
+            width: 100%;
+            height: 22.5vw;
+            background-color: var(--color-white);
+            background: radial-gradient(var(--color-blue-1-05) 0.1vw, transparent 0);
+            background-size: 2vw 2vw;
+            position: relative;
+        }
+
+        /*Card Complero*/
+        .d-gs-part1-cardTemplate
+        {
+            width: 20%;
+            height: 22vw;
+            border-radius: 1vh;
+            border-color: var(--color-black-1);
+            border-style: solid;
+            border-width: 0.1vh;
+            position: absolute;
+            bottom: 4vw;
+            padding: 0;
+        }
+
+        /*Card Estudante*/
+        #d-gs-part1-cardTemplate-1
+        {
+            left: 20vh;
+        }
+
+        /*Card QV*/
+        #d-gs-part1-cardTemplate-2
+        {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /*Card Simu*/
+        #d-gs-part1-cardTemplate-3
+        {
+            right: 20vh;
+        }
+
+        /*Card Header Amarelo*/
+        .d-gs-part1-cardTemplate-header
+        {
+            width: 100%;
+            height: 30%;
+            border-top-right-radius: 1vh;
+            border-top-left-radius: 1vh;
+            border-bottom: 0.1vh solid var(--color-black-1);
+            position: relative;   
+            background-color: var(--color-yellow-6);
+        }
+
+        /*Card Header Azul*/
+        .d-gs-part1-cardTemplate-header-2
+        {
+            width: 100%;
+            height: 30%;
+            border-top-right-radius: 1vh;
+            border-top-left-radius: 1vh;
+            border-bottom: 0.1vh solid var(--color-black-1);
+            position: relative;   
+            background-color: var(--color-blue-7);
+        }
+
+            /*Titulo do Card*/
+            #txt-gs-part1-cardTemplate-title
+            {
+                font-family: var(--font-roboto);
+                font-size: 1.5vw;
+                text-align: center;
+                font-weight: bold;
+            }
+        
+        /*Card Body*/
+        #d-gs-part1-cardTemplate-body
+        {
+            width: 100%;
+            height: 70%;
+            background-color: var(--color-white);
+            border-bottom-right-radius: 1vh;
+            border-bottom-left-radius: 1vh;
+        }
+
+            /*Texto Card Body*/
+            #txt-gs-part1-cardTemplate-text
+            {
+                font-family: var(--font-roboto);
+                font-size: 1.3vw;
+                text-align: center;
+                top: 2vh;
+                padding: 2vh;
+            }
+            
+            /*Botão Card*/
+            #btn-gs-part1-cardTemplate-button
+            {
+                border-width: 0.1vh;
+                border-style: solid;
+                border-color: var(--color-blue-1);
+                width: 50%;
+                height: 3.3vw;
+                background-color: transparent;
+                position: absolute;
+                bottom: 2vh;
+            }
+
+            /*Texto do Botão*/
+            #txt-gs-part1-cardTemplate-button-text
+            {
+                font-family: var(--font-ruda);
+                color: var(--color-blue-1);
+                text-decoration: none;
+                float: left;
+                font-size: 1.15vw;
+                margin-top: 0.6vw;
+                margin-left: 1vw;
+            }
+            /*Icone do Botão*/
+            #icon-gs-part1-cardTemplete-button-icon
+            {
+                float: right;
+                width: 1.6vw;
+                height: auto;
+                margin-top: 0.4vw;
+                margin-right: 1vw;
+            }
+
+/*Botão Ver Mais*/
+#btn-gs-part2-verMais
+{
+    width: 90%;
+    height: 3.5vw;
+
+    border-width: 0.2vh;
+    border-color: var(--color-blue-4);
+    border-style: solid;
+
+    background-color: var(--color-blue-8);
+
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+/*Texto Botão*/
+#txt-gs-part2-verMais
+{
+    width: 100%;
+    height: 3.5vw;
+
+    font-size: 1.5vw;
+    font-family: var(--font-roboto);
+    color: white;
+}
+
+@media screen and (orientation: portrait)
+{
+    /*Coluna Titulo Parte 1*/
+    #d-gs-part1-titleCol
+    {
+        width: 100%;
+        height: max-content;
+        background-image: url("");
+        background-color: var(--color-blue-1);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+    }
+        /*Titulo Parte 1*/
+        #txt-gs-part1-titleCol-title
+        {
+            font-family: var(--font-dongle);
+            font-size: 3.7vh;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            top: 5vh;
+            transform: translateX(-50%);
+            color: var(--color-white)
+        }
+        
+        /*Texto Explicativo Principal*/
+        #txt-gs-part1-titleCol-text
+        {
+            font-family: var(--font-roboto);
+            font-size: 2vh;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            top: 5vh;
+            width: 70%;
+            height: 25vh;
+
+            transform: translateX(-50%);
+            color: var(--color-white)
+        }
+    
+        /*Card*/
+    
+            /*Coluna Card*/
+            #d-gs-part1-cardCol
+            {
+                width: 100%;
+                height: max-content;
+                background-color: var(--color-white);
+                background: radial-gradient(var(--color-blue-1-05) 0.15vh, transparent 0);
+                background-size: 2vh 2vh;
+                position: relative;
+            }
+    
+            /*Card Completo*/
+            .d-gs-part1-cardTemplate
+            {
+                width: 51%;
+                height: 30vh;
+                border-radius: 1vh;
+                border-color: var(--color-black-1);
+                border-style: solid;
+                border-width: 0.1vh;
+                position: relative;
+                bottom: inherit;
+                padding: 0;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+            }
+    
+            /*Card Estudante*/
+            #d-gs-part1-cardTemplate-1
+            {
+                margin-top: 5vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+            /*Card QV*/
+            #d-gs-part1-cardTemplate-2
+            {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+            /*Card Simu*/
+            #d-gs-part1-cardTemplate-3
+            {
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 5vh;
+            }
+    
+            /*Card Header Amarelo*/
+            .d-gs-part1-cardTemplate-header
+            {
+                width: 100%;
+                height: 30%;
+                border-top-right-radius: 1vh;
+                border-top-left-radius: 1vh;
+                border-bottom: 0.1vh solid var(--color-black-1);
+                position: relative;   
+                background-color: var(--color-yellow-6);
+            }
+    
+            /*Card Header Azul*/
+            .d-gs-part1-cardTemplate-header-2
+            {
+                width: 100%;
+                height: 30%;
+                border-top-right-radius: 1vh;
+                border-top-left-radius: 1vh;
+                border-bottom: 0.1vh solid var(--color-black-1);
+                position: relative;   
+                background-color: var(--color-blue-7);
+            }
+    
+                /*Titulo do Card*/
+                #txt-gs-part1-cardTemplate-title
+                {
+                    font-family: var(--font-roboto);
+                    font-size: 2vh;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            
+            /*Card Body*/
+            #d-gs-part1-cardTemplate-body
+            {
+                width: 100%;
+                height: 70%;
+                background-color: var(--color-white);
+                border-bottom-right-radius: 1vh;
+                border-bottom-left-radius: 1vh;
+            }
+    
+                /*Texto Card Body*/
+                #txt-gs-part1-cardTemplate-text
+                {
+                    font-family: var(--font-roboto);
+                    font-size: 1.5vh;
+                    text-align: center;
+                    top: 2vh;
+                    padding: 2vh;
+                }
+                
+                /*Botão Card*/
+                #btn-gs-part1-cardTemplate-button
+                {
+                    border-width: 0.1vh;
+                    border-style: solid;
+                    border-color: var(--color-blue-1);
+                    width: 50%;
+                    height: 4vh;
+                    background-color: transparent;
+                    position: absolute;
+                    bottom: 2vh;
+                }
+    
+                /*Texto do Botão*/
+                #txt-gs-part1-cardTemplate-button-text
+                {
+                    font-family: var(--font-ruda);
+                    color: var(--color-blue-1);
+                    float: left;
+                    font-size: 1.5vh;
+                    margin-top: 0.3vh;
+                    margin-left: 2vw;
+                }
+                /*Icone do Botão*/
+                #icon-gs-part1-cardTemplete-button-icon
+                {
+                    float: right;
+                    width: 2vh;
+                    height: auto;
+                    margin-top: 0.2vh;
+                    margin-right: 2vw;
+                }
+    /*tabela*/
+    #d-sistema-tableEstudante
+    {display: none;}
+    
+}
+

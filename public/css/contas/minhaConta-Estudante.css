@@ -1,0 +1,892 @@
+:root
+{              
+    /* fontes */
+    --font-roboto: 'Roboto', sans-serif;
+    --font-lexend-giga: 'Lexend Giga', sans-serif;
+
+    /* tamanhos */
+    --size-profile: 3vw;
+}            
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Bootstrap */
+    .container-fluid {
+        display: flex;
+        height: 100vh; 
+        padding: 0;
+    }
+/* Fim do Bootstrap */
+
+/* Sidebar esquerdo  */
+    #sidebar {
+       /* tamanho */
+        height: 100%;
+        width: 23%; 
+
+        /* alinhamento */
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 2vh 1vw 2vh 1vw;
+        justify-content: center;
+
+        overflow-y: auto; 
+
+        /* definindo cor */
+        background-color: rgba(50, 108, 180, 0.7);
+
+        /* configurando fontes */
+        font-family: var(--font-roboto);
+        color: #fff;
+
+        box-shadow: 5px 0px 7px rgba(6, 14, 129, 0.2);
+    }
+
+    /* dados do usuário */
+        /* nome */
+        #username 
+        {
+            text-align: center;
+            margin: 3vh;
+            font-size: 1.8vw;
+            font-weight: 600;
+        }
+
+        /* img de perfil */
+        #profile-picture {
+            position: relative;
+            display: inline-block;
+            border-radius: 30px; 
+            width: 11.5vw;            
+            display: block;
+            margin: 0 auto;              
+            position: relative;
+            margin-top: 3vh;
+        }
+
+        #profile-picture img {
+            width: 11.5vw;
+            border-radius: 30px; 
+            border: 2px #21497a solid;                  
+            height: auto;
+            transition: opacity 0.3s ease;
+        }
+
+        #profile-picture:hover img {                   
+            opacity: 0.7;
+            border:none;             
+        }
+
+        #profile-picture:active img {
+            opacity: 0.5;               
+        }
+
+        #icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #profile-picture:hover #icon,
+        #profile-picture:active #icon {
+            border-radius: 30px; 
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #profile-picture #icon img{
+            width: 5vh;
+            height: 5vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        
+
+        /* fim da img de perfil */
+
+        /* email e tipo acesso */
+        #email, #tipoAcesso{
+            margin-top: 4vh;
+            text-align: center;
+            font-size: 1.2vw;
+        }
+
+        #tipoAcesso{
+            font-weight: 600;
+        }
+
+    /*  fim dos dados do usuário */
+
+    /* menu da sidebar esquerdo*/
+    #row-menu{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        padding: 10px;
+    }
+
+    #row-menu a{                    
+        display: block;     
+        padding: 1vh; 
+        text-decoration: none;
+        font-size: 1.2vw;
+        color: #fff;                
+        margin: 1vh;
+    }
+
+    #row-menu a:hover {
+        background-color: #5980af; 
+    }
+
+    #row-menu img{             
+        width: 1.5vw;
+        filter: invert(1); /* deixa o icon branco */                
+        margin-right: 2vw;   
+    }
+/* fim do sidebar esquerdo*/
+
+
+/* Conteúdo principal 
+   explicação: Nesta parte fica o conteúdo principal do site ao lado da sidebar */
+    #content {
+        flex: 1; /* Ocupa todo o espaço restante à direita */
+        overflow-y: auto; 
+        align-items: center;
+        max-width: 77%;
+        max-height: 300vh;
+        margin-left: 23vw; 
+        padding: 0;
+        flex-direction: column; 
+        background-color: #E7ECF1;
+        margin-top: 10vh; 
+        padding-top: 40vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;  
+    }
+
+
+    /* Parte: navbar */                
+    #navbar-a{   
+        /* posição */                               
+        top: 0; 
+        right: 0;
+        position: fixed;
+
+        /* tamanho */
+        width: 77%;
+        height: 10vh;
+
+        background-image: linear-gradient(to bottom, rgba(50, 108, 180), rgba(14, 66, 132));
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+        z-index: 289;
+    }
+
+    #navbar-a h4{
+        color: #fff;
+        position: absolute;
+        bottom: 0.5vh;
+        left: 6vw;
+        font-size: 1.6vw;
+        font-weight: 500;
+    }
+
+
+    /*  parte: sidebar-right
+    explicação: é a navbar menor que fica no lado direito superior da tela, onde fica o icone do menu e a foto de perfil */
+    #sidebar-right{    
+        background-color: hsl(213, 57%, 45%);
+        margin-left: 85%;
+        position: absolute; 
+        top: 0;
+        right: 0; 
+        border-radius: 0 0 0 1.5vw;
+        width: 12vw;
+        height: 8.5vh;
+        box-shadow: 0px 0px 5.5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* foto de perfil do usuário */
+    #img-profile
+    {
+        width: var(--size-profile);
+        height: var(--size-profile);
+        border-radius: 50em;
+        margin-left: 2vw;
+        justify-content: left;
+    }
+                    
+    /* botão que abre o menu lateral */
+
+    #btn-hamburguer{
+        justify-content: right;
+        margin-right: 1.5vw;
+        border: 0.3vh solid #adc7d1;
+        border-radius: 1vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        font-size: 1.2vw;
+    }
+
+    #btn-hamburguer, #btn-close:focus{
+        outline: none; 
+        box-shadow: none; 
+    }
+
+    #icon-hamburguer{
+        color: #aebdca;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    /* Menu Lateral */                
+    #menu-preptec{
+        background: linear-gradient(180deg, #326CB4 0%, #0f51a3 100%);
+        width: 27.5vw;
+    }
+
+    #menu-header{                 
+        box-shadow: 0px 4px 4px #214a7c;
+        padding-left: 2vw;
+        background-color: #295fa1;
+        font-family: var(--font-lexend-giga);
+        color: #fff;
+    }
+
+    #menu-header h5{
+        font-size: 1.4vw;
+    }
+
+    #menu-header button{
+        color: #fff;
+        filter: invert(1); 
+        background-color: none;
+    }
+
+    #icon-menu{
+        width: 1.5vw;
+        margin-left: 1.5vw; 
+        filter: invert(0.8); /* deixa o icon branco */                    
+    }
+
+    #menu-itens{                                            
+        font-family: var(--font-roboto);      
+    }
+
+    /* animação */
+        #background-animation {          
+            z-index: 0;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .circles {
+            animation: moveUp 25s linear infinite; 
+            opacity: 0.5;
+            bottom: -20vh;
+            position: absolute;
+            border-radius: 50vh;
+            background: rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+            justify-content: flex-end; /* Iniciar da parte inferior */
+        }
+
+        #circle1{ width: 5vw; height: 5vw; left: 20%; animation-delay: 0s; }
+        #circle2{ width: 2vw; height: 2vw; left: 60%; animation-delay: 2s; animation-duration: 25s; }
+        #circle3{ width: 1.5vw; height: 1.5vw; left: 30%; animation-delay: 4s; animation-duration: 35s; }
+        #circle4{ width: 3vw; height: 3vw; left: 16%; animation-delay: 5s; animation-duration: 45s; }
+        #circle5{ width: 4vw; height: 4vw; left: 70%; animation-delay: 6s; animation-duration: 15s; }
+        #circle6{ width: 2vw; height: 2vw; left: 40%; animation-delay: 5s;}
+        #circle7{ width: 4vw; height: 4vw; left: 90%; animation-delay: 10s; animation-duration: 11s; }
+        #circle8{ width: 5vw; height: 5vw; left: 50%; animation-delay: 13s; animation-duration: 25s; }
+        #circle9{ left: 10%; animation-delay: 20s; animation-duration: 35s; }
+
+
+        @keyframes moveUp {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-52vw);
+                opacity: 0;
+            }
+        }
+    /* fim da animação */
+
+    #icon-menu{
+        width: 1.5vw;
+        margin-left: 1.5vw; 
+        filter: invert(0.8); /* deixa o icon branco */                    
+    }
+
+    #nav-link{
+        color:#fff;
+        opacity: 0.8;
+        margin: 0 0 1.7vh 0;
+        transition: 0.1s ease;
+    }
+
+    #nav-link:hover{
+        opacity: 0.8;
+        border-left: 0.5vh solid #F1C247;
+    }
+    /* fim do menu lateral */
+/* fim da navbar */
+
+    /* formulário para alterar os dados do estudante  */
+        #row-form{
+            display: flex;                      
+            margin: 3vh 0 3vh 0;
+            background-color: #FCFCFC;
+            width: 65vw;
+            height: fit-content;
+            justify-content: center;
+           
+            padding: 0;
+            border-radius: 1vw;                               
+            
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }                  
+
+        #form{
+            padding: 1rem;
+            margin: 5vh 0 4vh 0;
+            width: 52vw;
+            height: 39vh;       
+            font-family: var(--font-roboto);                 
+
+            border-radius: 0.7vw;
+            border-top: 0.7vw solid #F1C247;
+            background-color: #F2F2F2;
+            text-align: center;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);      
+      
+        }
+
+        #form h5{
+            font-size: 1.5vw;
+            margin-bottom: 3vh;
+            bottom: 3vh;
+        }
+
+        #form input{
+            border: 0.2vw solid #F1C247;                      
+            height: 5.5vh;
+            width: 35vw;
+            margin-right: 2vw;
+            margin-left: 3vw;
+            margin-top: 1.5vh;
+            font-size: 1.5vw;
+
+        }
+       
+        #icon_pencil{
+            width: 2vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #form button{
+            margin-top: 2vh;
+            border: none;
+            width: 4vw;
+            height: 6vh;
+            background-color: #4396E1;
+            border-radius: 0.5vw;
+
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        #form button:hover{
+            background-color: #3581c4;
+        }
+
+        #form button:active{
+            filter: brightness(90%); /* deixa o button mais escuro ao clicar */
+        }
+
+    /* Fim do formulário */
+
+    /* Parte: Área do Aluno */
+        
+        #col-areaAluno{    
+            display: flex; 
+            justify-content: center;                     
+            padding: 0 0.7vw 0 0.7vw;
+            height: 45vh;                     
+        }
+
+        #areaAluno {
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+            border: none;
+            background-color: #F2F2F2;
+            border-radius: 0.7vw;
+            border-top: 0.7vw solid #60A5E4;
+            display: flex;
+            font-family: var(--font-roboto);
+          
+            padding: 0;
+            width: 52vw;
+            height: 39vh;                                  
+            margin: 0;
+            justify-content: space-between;
+        }  
+        
+        #areaAluno h5
+        {
+            font-size: 1.5vw;
+            margin-bottom: 5vh;      
+        }
+        #areaAluno p, #areaAluno  a
+        {
+            margin: 1.2rem 0;
+            font-size: 1.3vw;
+            text-align: justify;                
+        }
+        #areaAluno p
+        {
+            margin-bottom: 5vh;       
+        }
+        #areaAluno a
+        {
+            text-decoration: none;
+        }
+
+        #col-img{
+            max-width: 29%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2vh;
+        }
+
+        #col-img img{
+            width: 12vw;
+            height: 12vw;
+        }
+
+        #col-texto{
+            max-width: 70%;
+            left: 0;
+            position: relative;
+            margin-left: 0;
+            text-align: left;
+            padding: 5vh 2vw 2vh 4vw;                     
+        } 
+        #input-imagem-user
+        {
+            width: 100%;
+            height: 10vw;
+            border: 0;
+            padding: 0;
+            margin: 0;
+
+            color: transparent;
+            background: transparent;
+        }      
+        input[type=file]::file-selector-button
+        {
+            width: 200%;
+            height: 10vw;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            width: 0.1%;
+            color: transparent;
+            background: transparent;
+        }
+      
+    /* Fim da área do aluno */
+
+    /* Parte: Excluir Conta */
+        #row-excluirConta{
+            display: flex;                      
+            margin-bottom: 3vh;
+            padding: 2vw;
+            border-radius: 1vw;   
+            width: 65.2vw;
+            background-color: #FCFCFC;
+            font-family: var(--font-roboto);
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #row-excluirConta h4{
+            font-size: 1.7vw;
+            font-weight: 500;
+            border-bottom: 0.2vh solid rgb(199, 198, 198);
+            width: 60vw;
+        }
+
+        #col-textoExcluirConta p{
+            font-size: 1.3vw; 
+        }
+
+        #col-textExcluirConta{         
+            text-align: left;  
+            max-width: 70%;  
+        
+            padding: 10px; 
+        }
+
+        #col-buttonExcluirConta{
+            max-width: 30%;
+            padding: 10px; 
+            align-items: center;
+            display: flex;
+        }
+
+        #row-excluirConta button{
+            color: #D03F3F ;
+            border: 1px solid #D03F3F;
+            background-color: #fff;                  
+            width: 12vw;
+            height: 6vh;
+            margin-left: 4vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2vw;
+        }
+
+        #row-excluirConta button:hover{
+            background-color: #eeeeee;
+            font-weight: 500;
+        }
+
+        #row-excluirConta button:active{
+            background-color: #dddbdb;
+        }
+    /* (fim) Parte: Excluir Conta */
+
+/* Fim do conteudo principal */   
+
+@media screen and (orientation: portrait) 
+{
+    :root
+{              
+    /* tamanhos */
+    --size-profile: 5vh;
+}  
+    #sidebar
+    {
+        position: absolute;
+        width: 100%;
+        height: max-content;
+        z-index: 2;
+        top: 10vh;
+        background-color: rgba(50, 108, 180);
+    }
+    /* dados do usuário */
+        /* nome */
+        #username 
+        {
+            margin: 1vh;
+            font-size: 2vh; 
+        }
+
+        /* img de perfil */
+        #profile-picture 
+        {
+            width: 20vw;                       
+            margin-top: 1vh;
+        }
+
+        #profile-picture img {
+            width: 20vw;
+            border-radius: 30px; 
+        }
+
+        #profile-picture:hover img 
+        {                   
+            opacity: 0.7;
+            border:none;             
+        }
+
+        #profile-picture:active img {
+            opacity: 0.5;               
+        }
+
+        #icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #profile-picture:hover #icon,
+        #profile-picture:active #icon {
+            border-radius: 30px; 
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* fim da img de perfil */
+
+        /* email e tipo acesso */
+        #email, #tipoAcesso
+        {
+            font-size: 3.5vw;
+        }
+        #email
+        {
+            margin-top: 1vh;
+        }
+        #tipoAcesso
+        {
+            margin-top: 3vh;
+            margin-right: 1.5vw;
+            float: right;
+        }
+        #row-menu a
+        {
+            font-size: 3.5vw;
+
+        }
+        #row-menu img
+        {
+            width: 2vh;
+        }
+
+
+    /*  fim dos dados do usuário */
+    #content 
+    {
+        position: absolute;
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+        max-height: max-content;
+        margin-left: 0; 
+        margin-top: 0vh; 
+        padding-top: 45vh;
+        display: flex;  
+    }
+    #navbar-a{   
+        /* posição */                               
+        top: 0; 
+        right: 0;
+        position: fixed;
+
+        /* tamanho */
+        width: 100%;
+        height: 10vh;
+        z-index: 3;
+    }
+    #navbar-a h4
+    {
+        font-size: 3vh;
+    }
+    #navbar-preptec
+    {
+        max-height: 100%;
+    }
+    #menu-preptec
+    {
+        width: 100%;
+    }
+    #menu-header
+    {                 
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 4vw;
+    }
+    #menu-header h5
+    {                 
+        font-size: 2.5vh;
+        margin-top: 1vh;
+    }
+    #icon-menu
+    {
+        width: 2vh;
+        margin-left: 3vw; 
+    }
+    #nav-link
+    {
+        margin-bottom: 1.5vh;
+        color:#fff;
+        opacity: 0.8;
+        font-family: var(--font-roboto);
+        font-size: 2vh;
+    }
+    #dropdown-menu a
+    {
+        font-size: 2vh;
+    }
+    #btn-hamburguer{
+        justify-content: right;
+        margin-right: 3vh;
+        border: 0.3vh solid #adc7d1;
+        border-radius: 1vh;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        font-size: 1.2vh;
+    }
+    #sidebar-right{    
+        margin-left: 70%;
+        width: 30vw;
+        height: 8.5vh;
+
+    }
+    #img-profile
+    {
+        width: var(--size-profile);
+        height: var(--size-profile);
+        border-radius: 50em;
+        margin-left: 3vw;
+        justify-content: left;
+    }
+    #btn-hamburguer
+    {
+        margin-right: 3vw;
+        font-size: 2vh;
+    }
+    #row-form
+    {               
+        margin: 0vh 0 1vh 0vh;     
+        width: 95%;
+        height: max-content;
+        justify-content: center;
+        padding-bottom: 3vh;
+        padding-top: 4%;
+    }   
+    #form
+    {
+        padding: 1rem;
+        margin: 2vh 0vh 3vh 0vh;
+        width: 95%;
+        height: max-content; 
+        display: block; 
+        border-top: 0.7vh solid #F1C247;                    
+    }
+    #form h5
+    {
+        font-size: 2vh;
+        margin-bottom: 1vh;
+    }
+    #form input
+    {
+        border: 0.2vw solid #F1C247;                      
+        height: 5.5vh;
+        width: 90%;
+        font-size: 4vw;
+
+    }
+    #icon_pencil
+    {
+        width: 4vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #form button
+    {
+        margin-top: 1.25vh;
+        border: none;
+        width: 10vw;
+        height: 5vh;
+        background-color: #4396E1;
+        border-radius: 0.5vw;
+
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    #col-areaAluno
+    {    
+        display: flex; 
+        justify-content: center;                     
+        padding: 0 0.7vw 0 0.7vw;
+        height: max-content;                     
+    }
+    #areaAluno 
+    {
+        border-top: 0.7vh solid #60A5E4;
+        width: 96.5%;
+        height: max-content;                                  
+    }
+    #areaAluno h5
+    {
+        width: max-content;
+        margin-top: -3vh;
+        font-size: 5vw;
+        margin-bottom: 2vh;      
+    }
+    #areaAluno p, #areaAluno  a
+    {
+        margin: 1vh;
+        font-size: 3.5vw;          
+    }
+    #areaAluno p
+    {
+        margin-bottom: 1vh;       
+    }
+    #col-img img
+    {
+        width: 20vw;
+        height: auto;
+    }
+    #row-excluirConta{
+        display: flex;                      
+        margin-bottom: 3vh;
+        padding: 2vw;
+        border-radius: 1vw;   
+        width: 95%;
+        background-color: #FCFCFC;
+        font-family: var(--font-roboto);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #row-excluirConta h4
+    {
+        font-size: 5vw;
+        border-bottom: 0.3vh solid rgb(199, 198, 198);
+        width: 100%;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+    }
+
+    #col-textoExcluirConta p
+    {
+        font-size: 4vw; 
+    }
+    #row-excluirConta button
+    {        
+        border: 0.1vh solid #D03F3F;                 
+        width: 18vw;
+        height: 9vh;
+        font-size: 3vw;
+    }
+}
